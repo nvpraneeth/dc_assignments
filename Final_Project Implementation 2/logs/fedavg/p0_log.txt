@@ -1,0 +1,1355 @@
+================================================================================
+Process 0 - FedAvg (Centralized) Protocol
+Started at: 2025-12-07 16:45:55
+================================================================================
+
+[2025-12-07 16:45:55.292] [p0] [INFO] Model initialized: 61706 parameters
+[2025-12-07 16:45:55.293] [p0] [INFO] [INIT] Process 0 initialized
+[2025-12-07 16:45:55.293] [p0] [INFO] [INIT] System: 10 nodes | Local epochs: 5 | Bandwidth: 10.0 Mbps
+[2025-12-07 16:45:55.293] [p0] [INFO] [INIT] Model: LeNet-5 | Dataset: MNIST (Non-IID)
+[2025-12-07 16:45:55.293] [p0] [INFO] Training dataset size: 6332 samples
+[2025-12-07 16:45:55.293] [p0] [INFO] Test dataset size: 10000 samples
+[2025-12-07 16:45:55.293] [p0] [INFO] === Round 1/50 STARTED ===
+[2025-12-07 16:45:55.293] [p0] [INFO] Current Virtual Time: 0.0000s
+[2025-12-07 16:45:55.293] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 16:46:18.888] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 16:46:18.889] [p0] [INFO] [COMPUTE] Real CPU Time: 16.3812s
+[2025-12-07 16:46:18.889] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 16:46:18.889] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 16:46:18.889] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 16:46:18.889] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 16:46:18.889] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 16:46:18.889] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 16:46:18.890] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 16:46:18.890] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 16:46:18.891] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 16:46:18.891] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 16:46:18.891] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 16:46:18.891] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 16:46:18.892] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 16:46:18.892] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 16:46:18.892] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 16:46:18.892] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 16:46:18.892] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 16:46:18.897] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 16:46:18.898] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 16:46:18.906] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 16:46:18.906] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 16:46:33.937] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 16:46:33.938] [p0] [INFO] === Round 2/50 STARTED ===
+[2025-12-07 16:46:33.938] [p0] [INFO] Current Virtual Time: 16.5787s
+[2025-12-07 16:46:33.938] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 17:03:11.554] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 17:03:11.554] [p0] [INFO] [COMPUTE] Real CPU Time: 12.4146s
+[2025-12-07 17:03:11.555] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 17:03:11.555] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 17:03:11.555] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 17:03:11.555] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 17:03:11.555] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 17:03:11.555] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 17:03:11.559] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 17:03:11.560] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 17:03:11.561] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 17:03:11.561] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 17:03:11.562] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 17:03:11.563] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 17:03:11.563] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 17:03:11.564] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 17:03:11.565] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 17:03:11.565] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 17:03:11.565] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 17:03:11.581] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 17:03:11.584] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 17:03:11.585] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 17:03:11.587] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 17:20:20.863] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 17:20:20.935] [p0] [INFO] === Round 3/50 STARTED ===
+[2025-12-07 17:20:20.936] [p0] [INFO] Current Virtual Time: 29.1908s
+[2025-12-07 17:20:20.936] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 17:53:32.136] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 17:53:32.137] [p0] [INFO] [COMPUTE] Real CPU Time: 16.6586s
+[2025-12-07 17:53:32.137] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 17:53:32.137] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 17:53:32.137] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 17:53:32.137] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 17:53:32.137] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 17:53:32.137] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 17:53:32.139] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 17:53:32.139] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 17:53:32.140] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 17:53:32.140] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 17:53:32.141] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 17:53:32.142] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 17:53:32.142] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 17:53:32.142] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 17:53:32.143] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 17:53:32.143] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 17:53:32.143] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 17:53:32.160] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 17:53:32.168] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 17:53:32.168] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 17:53:32.170] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:11:31.756] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:11:31.828] [p0] [INFO] === Round 4/50 STARTED ===
+[2025-12-07 18:11:31.828] [p0] [INFO] Current Virtual Time: 46.0468s
+[2025-12-07 18:11:31.828] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:17:06.180] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:17:06.180] [p0] [INFO] [COMPUTE] Real CPU Time: 16.7955s
+[2025-12-07 18:17:06.181] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:17:06.181] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:17:06.181] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:17:06.181] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:17:06.181] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:17:06.181] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:17:06.185] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:17:06.186] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:17:06.187] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:17:06.187] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:17:06.188] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:17:06.189] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:17:06.190] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:17:06.190] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:17:06.191] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:17:06.191] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:17:06.191] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:17:06.200] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:17:06.202] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:17:06.203] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:17:06.203] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:17:21.263] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:17:21.264] [p0] [INFO] === Round 5/50 STARTED ===
+[2025-12-07 18:17:21.264] [p0] [INFO] Current Virtual Time: 63.0397s
+[2025-12-07 18:17:21.264] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:17:40.057] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:17:40.058] [p0] [INFO] [COMPUTE] Real CPU Time: 15.0198s
+[2025-12-07 18:17:40.058] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:17:40.058] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:17:40.058] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:17:40.058] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:17:40.058] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:17:40.058] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:17:40.059] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:17:40.060] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:17:40.060] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:17:40.060] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:17:40.061] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:17:40.061] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:17:40.061] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:17:40.061] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:17:40.062] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:17:40.062] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:17:40.062] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:17:40.067] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:17:40.068] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:17:40.068] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:17:40.068] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:17:55.101] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:17:55.103] [p0] [INFO] === Round 6/50 STARTED ===
+[2025-12-07 18:17:55.103] [p0] [INFO] Current Virtual Time: 78.2570s
+[2025-12-07 18:17:55.103] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:18:08.534] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:18:08.534] [p0] [INFO] [COMPUTE] Real CPU Time: 12.3330s
+[2025-12-07 18:18:08.535] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:18:08.535] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:18:08.535] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:18:08.535] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:18:08.535] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:18:08.535] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:18:08.536] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:18:08.536] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:18:08.536] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:18:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:18:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:18:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:18:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:18:08.538] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:18:08.538] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:18:08.538] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:18:08.538] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:18:08.543] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:18:08.544] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:18:08.544] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:18:08.544] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:18:23.577] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:18:23.579] [p0] [INFO] === Round 7/50 STARTED ===
+[2025-12-07 18:18:23.579] [p0] [INFO] Current Virtual Time: 90.7875s
+[2025-12-07 18:18:23.579] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:18:37.072] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:18:37.074] [p0] [INFO] [COMPUTE] Real CPU Time: 12.2830s
+[2025-12-07 18:18:37.074] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:18:37.074] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:18:37.074] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:18:37.074] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:18:37.074] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:18:37.074] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:18:37.076] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:18:37.076] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:18:37.077] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:18:37.077] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:18:37.077] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:18:37.077] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:18:37.078] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:18:37.078] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:18:37.078] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:18:37.078] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:18:37.078] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:18:37.083] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:18:37.084] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:18:37.084] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:18:37.085] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:18:52.115] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:18:52.115] [p0] [INFO] === Round 8/50 STARTED ===
+[2025-12-07 18:18:52.115] [p0] [INFO] Current Virtual Time: 103.2679s
+[2025-12-07 18:18:52.115] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:19:06.300] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:19:06.301] [p0] [INFO] [COMPUTE] Real CPU Time: 12.2301s
+[2025-12-07 18:19:06.301] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:19:06.301] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:19:06.301] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:06.301] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:19:06.301] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:19:06.301] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:19:06.302] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:19:06.302] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:19:06.302] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:19:06.303] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:19:06.303] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:19:06.303] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:19:06.303] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:19:06.304] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:19:06.304] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:19:06.304] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:19:06.304] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:19:06.309] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:19:06.310] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:19:06.310] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:19:06.311] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:19:21.341] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:19:21.342] [p0] [INFO] === Round 9/50 STARTED ===
+[2025-12-07 18:19:21.342] [p0] [INFO] Current Virtual Time: 115.6954s
+[2025-12-07 18:19:21.342] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:19:33.356] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:19:33.356] [p0] [INFO] [COMPUTE] Real CPU Time: 11.7856s
+[2025-12-07 18:19:33.356] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:19:33.356] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:19:33.356] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:33.356] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:19:33.356] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:19:33.356] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:19:33.357] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:19:33.357] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:19:33.358] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:19:33.358] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:19:33.358] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:19:33.359] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:19:33.359] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:19:33.359] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:19:33.359] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:19:33.359] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:19:33.359] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:19:33.364] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:19:33.365] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:19:33.365] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:19:33.366] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:19:48.395] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:19:48.396] [p0] [INFO] === Round 10/50 STARTED ===
+[2025-12-07 18:19:48.396] [p0] [INFO] Current Virtual Time: 127.6785s
+[2025-12-07 18:19:48.397] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:19:58.949] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:19:58.949] [p0] [INFO] [COMPUTE] Real CPU Time: 11.1479s
+[2025-12-07 18:19:58.949] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:19:58.949] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:19:58.949] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:58.949] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:19:58.949] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:19:58.950] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:19:58.950] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:19:58.951] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:19:58.951] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:19:58.951] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:19:58.952] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:19:58.952] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:19:58.952] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:19:58.952] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:19:58.953] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:19:58.953] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:19:58.953] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:19:58.957] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:19:58.958] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:19:58.958] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:19:58.959] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:20:13.988] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:20:13.989] [p0] [INFO] === Round 11/50 STARTED ===
+[2025-12-07 18:20:13.990] [p0] [INFO] Current Virtual Time: 139.0239s
+[2025-12-07 18:20:13.990] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:20:24.697] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:20:24.698] [p0] [INFO] [COMPUTE] Real CPU Time: 11.3824s
+[2025-12-07 18:20:24.698] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:20:24.699] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:20:24.699] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:20:24.699] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:20:24.699] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:20:24.699] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:20:24.700] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:20:24.700] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:20:24.701] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:20:24.701] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:20:24.701] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:20:24.701] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:20:24.702] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:20:24.702] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:20:24.702] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:20:24.702] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:20:24.702] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:20:24.707] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:20:24.708] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:20:24.708] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:20:24.709] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:20:39.730] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:20:39.731] [p0] [INFO] === Round 12/50 STARTED ===
+[2025-12-07 18:20:39.731] [p0] [INFO] Current Virtual Time: 150.6037s
+[2025-12-07 18:20:39.731] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:20:50.235] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:20:50.235] [p0] [INFO] [COMPUTE] Real CPU Time: 11.2336s
+[2025-12-07 18:20:50.235] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:20:50.235] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:20:50.235] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:20:50.235] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:20:50.235] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:20:50.235] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:20:50.236] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:20:50.237] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:20:50.237] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:20:50.237] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:20:50.238] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:20:50.238] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:20:50.238] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:20:50.239] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:20:50.239] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:20:50.239] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:20:50.239] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:20:50.244] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:20:50.244] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:20:50.245] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:20:50.245] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:21:05.280] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:21:05.281] [p0] [INFO] === Round 13/50 STARTED ===
+[2025-12-07 18:21:05.281] [p0] [INFO] Current Virtual Time: 162.0348s
+[2025-12-07 18:21:05.281] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:21:19.954] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:21:19.955] [p0] [INFO] [COMPUTE] Real CPU Time: 12.4824s
+[2025-12-07 18:21:19.955] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:21:19.955] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:21:19.955] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:21:19.955] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:21:19.955] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:21:19.955] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:21:19.957] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:21:19.957] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:21:19.958] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:21:19.958] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:21:19.958] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:21:19.958] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:21:19.959] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:21:19.959] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:21:19.959] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:21:19.959] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:21:19.959] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:21:19.965] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:21:19.966] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:21:19.966] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:21:19.967] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:21:35.020] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:21:35.021] [p0] [INFO] === Round 14/50 STARTED ===
+[2025-12-07 18:21:35.021] [p0] [INFO] Current Virtual Time: 174.7146s
+[2025-12-07 18:21:35.021] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:21:48.238] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:21:48.239] [p0] [INFO] [COMPUTE] Real CPU Time: 12.4282s
+[2025-12-07 18:21:48.239] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:21:48.239] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:21:48.239] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:21:48.239] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:21:48.239] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:21:48.239] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:21:48.240] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:21:48.240] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:21:48.240] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:21:48.241] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:21:48.241] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:21:48.241] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:21:48.241] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:21:48.242] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:21:48.242] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:21:48.242] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:21:48.242] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:21:48.247] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:21:48.248] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:21:48.248] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:21:48.248] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:22:03.278] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:22:03.279] [p0] [INFO] === Round 15/50 STARTED ===
+[2025-12-07 18:22:03.279] [p0] [INFO] Current Virtual Time: 187.3404s
+[2025-12-07 18:22:03.279] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:22:15.514] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:22:15.514] [p0] [INFO] [COMPUTE] Real CPU Time: 11.8958s
+[2025-12-07 18:22:15.514] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:22:15.514] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:22:15.514] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:22:15.514] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:22:15.514] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:22:15.515] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:22:15.516] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:22:15.516] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:22:15.516] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:22:15.517] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:22:15.517] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:22:15.517] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:22:15.517] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:22:15.518] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:22:15.518] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:22:15.518] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:22:15.518] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:22:15.523] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:22:15.524] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:22:15.524] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:22:15.525] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:22:30.548] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:22:30.549] [p0] [INFO] === Round 16/50 STARTED ===
+[2025-12-07 18:22:30.549] [p0] [INFO] Current Virtual Time: 199.4336s
+[2025-12-07 18:22:30.549] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:22:41.131] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:22:41.132] [p0] [INFO] [COMPUTE] Real CPU Time: 11.2578s
+[2025-12-07 18:22:41.132] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:22:41.132] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:22:41.132] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:22:41.132] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:22:41.132] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:22:41.132] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:22:41.133] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:22:41.134] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:22:41.134] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:22:41.134] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:22:41.135] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:22:41.135] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:22:41.135] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:22:41.136] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:22:41.136] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:22:41.136] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:22:41.136] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:22:41.141] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:22:41.142] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:22:41.142] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:22:41.142] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:22:56.171] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:22:56.172] [p0] [INFO] === Round 17/50 STARTED ===
+[2025-12-07 18:22:56.172] [p0] [INFO] Current Virtual Time: 210.8888s
+[2025-12-07 18:22:56.172] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:23:07.223] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:23:07.223] [p0] [INFO] [COMPUTE] Real CPU Time: 11.0985s
+[2025-12-07 18:23:07.223] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:23:07.224] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:23:07.224] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:07.224] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:23:07.224] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:23:07.224] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:23:07.225] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:23:07.225] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:23:07.226] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:23:07.226] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:23:07.226] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:23:07.226] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:23:07.227] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:23:07.227] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:23:07.227] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:23:07.227] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:23:07.227] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:23:07.232] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:23:07.233] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:23:07.233] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:23:07.234] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:23:22.262] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:23:22.263] [p0] [INFO] === Round 18/50 STARTED ===
+[2025-12-07 18:23:22.263] [p0] [INFO] Current Virtual Time: 222.1848s
+[2025-12-07 18:23:22.263] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:23:32.928] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:23:32.929] [p0] [INFO] [COMPUTE] Real CPU Time: 11.2748s
+[2025-12-07 18:23:32.929] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:23:32.929] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:23:32.929] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:32.929] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:23:32.929] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:23:32.929] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:23:32.930] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:23:32.930] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:23:32.931] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:23:32.931] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:23:32.931] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:23:32.932] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:23:32.932] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:23:32.932] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:23:32.932] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:23:32.933] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:23:32.933] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:23:32.937] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:23:32.938] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:23:32.938] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:23:32.939] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:23:47.968] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:23:47.969] [p0] [INFO] === Round 19/50 STARTED ===
+[2025-12-07 18:23:47.969] [p0] [INFO] Current Virtual Time: 233.6570s
+[2025-12-07 18:23:47.969] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:23:58.581] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:23:58.582] [p0] [INFO] [COMPUTE] Real CPU Time: 11.1425s
+[2025-12-07 18:23:58.582] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:23:58.582] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:23:58.582] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:58.582] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:23:58.582] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:23:58.582] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:23:58.583] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:23:58.583] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:23:58.583] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:23:58.583] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:23:58.584] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:23:58.584] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:23:58.584] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:23:58.584] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:23:58.585] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:23:58.585] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:23:58.585] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:23:58.589] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:23:58.590] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:23:58.590] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:23:58.591] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:24:13.617] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:24:13.617] [p0] [INFO] === Round 20/50 STARTED ===
+[2025-12-07 18:24:13.617] [p0] [INFO] Current Virtual Time: 244.9970s
+[2025-12-07 18:24:13.617] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:24:24.107] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:24:24.108] [p0] [INFO] [COMPUTE] Real CPU Time: 11.3157s
+[2025-12-07 18:24:24.108] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:24:24.108] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:24:24.108] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:24:24.108] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:24:24.108] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:24:24.108] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:24:24.109] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:24:24.109] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:24:24.110] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:24:24.110] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:24:24.110] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:24:24.110] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:24:24.111] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:24:24.111] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:24:24.111] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:24:24.111] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:24:24.111] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:24:24.116] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:24:24.117] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:24:24.117] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:24:24.118] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:24:39.146] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:24:39.147] [p0] [INFO] === Round 21/50 STARTED ===
+[2025-12-07 18:24:39.147] [p0] [INFO] Current Virtual Time: 256.5102s
+[2025-12-07 18:24:39.147] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:24:49.568] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:24:49.568] [p0] [INFO] [COMPUTE] Real CPU Time: 11.1306s
+[2025-12-07 18:24:49.568] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:24:49.568] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:24:49.568] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:24:49.568] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:24:49.568] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:24:49.568] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:24:49.569] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:24:49.570] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:24:49.570] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:24:49.570] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:24:49.571] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:24:49.571] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:24:49.571] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:24:49.571] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:24:49.572] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:24:49.572] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:24:49.572] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:24:49.576] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:24:49.577] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:24:49.577] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:24:49.578] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:25:04.602] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:25:04.603] [p0] [INFO] === Round 22/50 STARTED ===
+[2025-12-07 18:25:04.603] [p0] [INFO] Current Virtual Time: 267.8382s
+[2025-12-07 18:25:04.603] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:25:15.396] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:25:15.397] [p0] [INFO] [COMPUTE] Real CPU Time: 11.2837s
+[2025-12-07 18:25:15.397] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:25:15.397] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:25:15.397] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:25:15.397] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:25:15.397] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:25:15.397] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:25:15.398] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:25:15.399] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:25:15.399] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:25:15.399] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:25:15.400] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:25:15.400] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:25:15.400] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:25:15.400] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:25:15.400] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:25:15.400] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:25:15.400] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:25:15.405] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:25:15.406] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:25:15.406] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:25:15.407] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:25:30.436] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:25:30.437] [p0] [INFO] === Round 23/50 STARTED ===
+[2025-12-07 18:25:30.437] [p0] [INFO] Current Virtual Time: 279.3194s
+[2025-12-07 18:25:30.437] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:25:41.007] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:25:41.007] [p0] [INFO] [COMPUTE] Real CPU Time: 11.2106s
+[2025-12-07 18:25:41.007] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:25:41.007] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:25:41.007] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:25:41.007] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:25:41.007] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:25:41.007] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:25:41.008] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:25:41.009] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:25:41.009] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:25:41.009] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:25:41.009] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:25:41.010] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:25:41.010] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:25:41.010] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:25:41.010] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:25:41.010] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:25:41.010] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:25:41.015] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:25:41.016] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:25:41.016] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:25:41.017] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:25:56.038] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:25:56.039] [p0] [INFO] === Round 24/50 STARTED ===
+[2025-12-07 18:25:56.040] [p0] [INFO] Current Virtual Time: 290.7275s
+[2025-12-07 18:25:56.040] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:26:08.533] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:26:08.534] [p0] [INFO] [COMPUTE] Real CPU Time: 11.1563s
+[2025-12-07 18:26:08.534] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:26:08.534] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:26:08.534] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:26:08.534] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:26:08.534] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:26:08.534] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:26:08.535] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:26:08.536] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:26:08.536] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:26:08.536] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:26:08.536] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:26:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:26:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:26:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:26:08.537] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:26:08.537] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:26:08.537] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:26:08.542] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:26:08.543] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:26:08.543] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:26:08.544] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:26:23.578] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:26:23.579] [p0] [INFO] === Round 25/50 STARTED ===
+[2025-12-07 18:26:23.580] [p0] [INFO] Current Virtual Time: 302.0812s
+[2025-12-07 18:26:23.580] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:26:35.197] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:26:35.199] [p0] [INFO] [COMPUTE] Real CPU Time: 11.4928s
+[2025-12-07 18:26:35.199] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:26:35.200] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:26:35.200] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:26:35.200] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:26:35.200] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:26:35.200] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:26:35.201] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:26:35.201] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:26:35.202] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:26:35.202] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:26:35.202] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:26:35.203] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:26:35.203] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:26:35.203] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:26:35.203] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:26:35.203] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:26:35.203] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:26:35.208] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:26:35.209] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:26:35.209] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:26:35.210] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:26:50.238] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:26:50.239] [p0] [INFO] === Round 26/50 STARTED ===
+[2025-12-07 18:26:50.239] [p0] [INFO] Current Virtual Time: 313.7715s
+[2025-12-07 18:26:50.239] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:27:01.933] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:27:01.934] [p0] [INFO] [COMPUTE] Real CPU Time: 11.2432s
+[2025-12-07 18:27:01.935] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:27:01.935] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:27:01.935] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:27:01.935] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:27:01.935] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:27:01.935] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:27:01.937] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:27:01.938] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:27:01.938] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:27:01.939] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:27:01.939] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:27:01.939] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:27:01.940] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:27:01.940] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:27:01.940] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:27:01.940] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:27:01.941] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:27:01.952] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:27:01.953] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:27:01.954] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:27:01.954] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:27:16.993] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:27:16.995] [p0] [INFO] === Round 27/50 STARTED ===
+[2025-12-07 18:27:16.995] [p0] [INFO] Current Virtual Time: 325.2122s
+[2025-12-07 18:27:16.995] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:27:34.600] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:27:34.600] [p0] [INFO] [COMPUTE] Real CPU Time: 12.8224s
+[2025-12-07 18:27:34.600] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:27:34.600] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:27:34.600] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:27:34.600] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:27:34.600] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:27:34.600] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:27:34.602] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:27:34.602] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:27:34.603] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:27:34.603] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:27:34.603] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:27:34.603] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:27:34.604] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:27:34.604] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:27:34.604] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:27:34.604] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:27:34.604] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:27:34.610] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:27:34.611] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:27:34.611] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:27:34.612] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:27:49.642] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:27:49.644] [p0] [INFO] === Round 28/50 STARTED ===
+[2025-12-07 18:27:49.645] [p0] [INFO] Current Virtual Time: 338.2320s
+[2025-12-07 18:27:49.645] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:28:01.705] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:28:01.707] [p0] [INFO] [COMPUTE] Real CPU Time: 11.8107s
+[2025-12-07 18:28:01.708] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:28:01.708] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:28:01.708] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:01.708] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:28:01.708] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:28:01.708] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:28:01.709] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:28:01.709] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:28:01.710] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:28:01.710] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:28:01.710] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:28:01.711] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:28:01.711] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:28:01.711] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:28:01.711] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:28:01.711] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:28:01.711] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:28:01.716] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:28:01.717] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:28:01.717] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:28:01.718] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:28:16.747] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:28:16.747] [p0] [INFO] === Round 29/50 STARTED ===
+[2025-12-07 18:28:16.747] [p0] [INFO] Current Virtual Time: 350.2402s
+[2025-12-07 18:28:16.747] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:28:28.262] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:28:28.263] [p0] [INFO] [COMPUTE] Real CPU Time: 11.4325s
+[2025-12-07 18:28:28.263] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:28:28.263] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:28:28.263] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:28.264] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:28:28.264] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:28:28.264] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:28:28.265] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:28:28.265] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:28:28.265] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:28:28.265] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:28:28.265] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:28:28.266] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:28:28.266] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:28:28.266] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:28:28.266] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:28:28.266] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:28:28.266] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:28:28.271] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:28:28.272] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:28:28.272] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:28:28.273] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:28:43.307] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:28:43.308] [p0] [INFO] === Round 30/50 STARTED ===
+[2025-12-07 18:28:43.308] [p0] [INFO] Current Virtual Time: 361.8702s
+[2025-12-07 18:28:43.308] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:28:54.497] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:28:54.498] [p0] [INFO] [COMPUTE] Real CPU Time: 11.2878s
+[2025-12-07 18:28:54.498] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:28:54.498] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:28:54.498] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:54.498] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:28:54.498] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:28:54.498] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:28:54.499] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:28:54.500] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:28:54.500] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:28:54.500] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:28:54.501] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:28:54.501] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:28:54.501] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:28:54.502] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:28:54.502] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:28:54.502] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:28:54.502] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:28:54.507] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:28:54.508] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:28:54.508] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:28:54.508] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:29:09.607] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:29:09.608] [p0] [INFO] === Round 31/50 STARTED ===
+[2025-12-07 18:29:09.608] [p0] [INFO] Current Virtual Time: 373.3554s
+[2025-12-07 18:29:09.608] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:45:22.452] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:45:22.452] [p0] [INFO] [COMPUTE] Real CPU Time: 11.7216s
+[2025-12-07 18:45:22.452] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:45:22.452] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 18:45:22.452] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:45:22.452] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:45:22.452] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 18:45:22.452] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 18:45:22.454] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 18:45:22.454] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 18:45:22.454] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 18:45:22.454] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 18:45:22.455] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 18:45:22.455] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 18:45:22.455] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 18:45:22.456] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 18:45:22.456] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 18:45:22.456] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 18:45:22.456] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 18:45:22.461] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 18:45:22.462] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 18:45:22.462] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 18:45:22.462] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:54:18.769] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 18:54:18.841] [p0] [INFO] === Round 32/50 STARTED ===
+[2025-12-07 18:54:18.841] [p0] [INFO] Current Virtual Time: 385.2745s
+[2025-12-07 18:54:18.841] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 19:26:34.931] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 19:26:34.931] [p0] [INFO] [COMPUTE] Real CPU Time: 16.1988s
+[2025-12-07 19:26:34.932] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 19:26:34.932] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 19:26:34.932] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:26:34.932] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 19:26:34.932] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 19:26:34.932] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 19:26:34.933] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 19:26:34.933] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 19:26:34.933] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 19:26:34.933] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 19:26:34.934] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 19:26:34.934] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 19:26:34.934] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 19:26:34.934] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 19:26:34.935] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 19:26:34.935] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 19:26:34.935] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 19:26:34.939] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 19:26:34.940] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 19:26:34.940] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 19:26:34.941] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 19:39:30.139] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 19:39:30.211] [p0] [INFO] === Round 33/50 STARTED ===
+[2025-12-07 19:39:30.211] [p0] [INFO] Current Virtual Time: 401.6708s
+[2025-12-07 19:39:30.211] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 19:39:50.329] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 19:39:50.330] [p0] [INFO] [COMPUTE] Real CPU Time: 13.3363s
+[2025-12-07 19:39:50.330] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 19:39:50.330] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 19:39:50.330] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:39:50.330] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 19:39:50.330] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 19:39:50.330] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 19:39:50.334] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 19:39:50.335] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 19:39:50.335] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 19:39:50.335] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 19:39:50.336] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 19:39:50.336] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 19:39:50.336] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 19:39:50.336] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 19:39:50.337] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 19:39:50.337] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 19:39:50.337] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 19:39:50.343] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 19:39:50.344] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 19:39:50.344] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 19:39:50.347] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 19:40:05.385] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 19:40:05.387] [p0] [INFO] === Round 34/50 STARTED ===
+[2025-12-07 19:40:05.387] [p0] [INFO] Current Virtual Time: 415.2046s
+[2025-12-07 19:40:05.387] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 19:58:02.121] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 19:58:02.121] [p0] [INFO] [COMPUTE] Real CPU Time: 14.8601s
+[2025-12-07 19:58:02.121] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 19:58:02.122] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 19:58:02.122] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:58:02.122] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 19:58:02.122] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 19:58:02.122] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 19:58:02.123] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 19:58:02.123] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 19:58:02.123] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 19:58:02.124] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 19:58:02.124] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 19:58:02.124] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 19:58:02.124] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 19:58:02.124] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 19:58:02.125] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 19:58:02.125] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 19:58:02.125] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 19:58:02.129] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 19:58:02.130] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 19:58:02.131] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 19:58:02.131] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:14:09.894] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:14:09.967] [p0] [INFO] === Round 35/50 STARTED ===
+[2025-12-07 20:14:09.967] [p0] [INFO] Current Virtual Time: 430.2621s
+[2025-12-07 20:14:09.967] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:50:08.636] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:50:08.637] [p0] [INFO] [COMPUTE] Real CPU Time: 14.2516s
+[2025-12-07 20:50:08.637] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:50:08.637] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:50:08.637] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:50:08.637] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:50:08.637] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:50:08.637] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:50:08.638] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:50:08.639] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:50:08.639] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:50:08.640] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:50:08.640] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:50:08.641] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:50:08.641] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:50:08.641] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:50:08.642] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:50:08.642] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:50:08.642] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:50:08.648] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:50:08.650] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:50:08.650] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:50:08.651] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:50:23.698] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:50:23.698] [p0] [INFO] === Round 36/50 STARTED ===
+[2025-12-07 20:50:23.699] [p0] [INFO] Current Virtual Time: 444.7112s
+[2025-12-07 20:50:23.699] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:54:06.204] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:54:06.205] [p0] [INFO] [COMPUTE] Real CPU Time: 14.8887s
+[2025-12-07 20:54:06.205] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:54:06.205] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:54:06.205] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:54:06.205] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:54:06.205] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:54:06.205] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:54:06.206] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:54:06.207] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:54:06.207] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:54:06.208] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:54:06.208] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:54:06.208] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:54:06.209] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:54:06.209] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:54:06.209] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:54:06.210] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:54:06.210] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:54:06.216] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:54:06.218] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:54:06.218] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:54:06.219] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:54:21.245] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:54:21.246] [p0] [INFO] === Round 37/50 STARTED ===
+[2025-12-07 20:54:21.246] [p0] [INFO] Current Virtual Time: 459.7973s
+[2025-12-07 20:54:21.246] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:54:34.744] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:54:34.745] [p0] [INFO] [COMPUTE] Real CPU Time: 12.5916s
+[2025-12-07 20:54:34.745] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:54:34.745] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:54:34.745] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:54:34.745] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:54:34.745] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:54:34.745] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:54:34.746] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:54:34.746] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:54:34.747] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:54:34.747] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:54:34.747] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:54:34.747] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:54:34.748] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:54:34.748] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:54:34.748] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:54:34.748] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:54:34.748] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:54:34.754] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:54:34.755] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:54:34.755] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:54:34.756] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:54:49.823] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:54:49.823] [p0] [INFO] === Round 38/50 STARTED ===
+[2025-12-07 20:54:49.823] [p0] [INFO] Current Virtual Time: 472.5864s
+[2025-12-07 20:54:49.823] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:55:08.327] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:55:08.327] [p0] [INFO] [COMPUTE] Real CPU Time: 13.3263s
+[2025-12-07 20:55:08.327] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:55:08.327] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:55:08.327] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:55:08.328] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:55:08.328] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:55:08.328] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:55:08.329] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:55:08.329] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:55:08.330] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:55:08.330] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:55:08.330] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:55:08.330] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:55:08.330] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:55:08.331] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:55:08.331] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:55:08.331] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:55:08.331] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:55:08.337] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:55:08.338] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:55:08.338] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:55:08.339] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:55:23.383] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:55:23.383] [p0] [INFO] === Round 39/50 STARTED ===
+[2025-12-07 20:55:23.384] [p0] [INFO] Current Virtual Time: 486.1101s
+[2025-12-07 20:55:23.384] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:55:42.478] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:55:42.479] [p0] [INFO] [COMPUTE] Real CPU Time: 13.2698s
+[2025-12-07 20:55:42.479] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:55:42.479] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:55:42.479] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:55:42.479] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:55:42.479] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:55:42.479] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:55:42.480] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:55:42.480] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:55:42.481] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:55:42.481] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:55:42.481] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:55:42.482] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:55:42.482] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:55:42.482] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:55:42.482] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:55:42.482] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:55:42.482] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:55:42.487] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:55:42.489] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:55:42.489] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:55:42.489] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:55:57.536] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:55:57.537] [p0] [INFO] === Round 40/50 STARTED ===
+[2025-12-07 20:55:57.537] [p0] [INFO] Current Virtual Time: 499.5773s
+[2025-12-07 20:55:57.537] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:56:14.167] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:56:14.167] [p0] [INFO] [COMPUTE] Real CPU Time: 13.7639s
+[2025-12-07 20:56:14.168] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:56:14.168] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:56:14.168] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:56:14.168] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:56:14.168] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:56:14.168] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:56:14.169] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:56:14.169] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:56:14.170] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:56:14.170] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:56:14.170] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:56:14.171] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:56:14.171] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:56:14.171] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:56:14.171] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:56:14.172] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:56:14.172] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:56:14.176] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:56:14.178] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:56:14.178] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:56:14.179] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:56:29.220] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:56:29.221] [p0] [INFO] === Round 41/50 STARTED ===
+[2025-12-07 20:56:29.221] [p0] [INFO] Current Virtual Time: 513.5387s
+[2025-12-07 20:56:29.221] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:56:43.210] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:56:43.211] [p0] [INFO] [COMPUTE] Real CPU Time: 12.9183s
+[2025-12-07 20:56:43.211] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:56:43.211] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:56:43.211] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:56:43.211] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:56:43.211] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:56:43.211] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:56:43.212] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:56:43.213] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:56:43.213] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:56:43.213] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:56:43.214] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:56:43.214] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:56:43.214] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:56:43.215] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:56:43.215] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:56:43.215] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:56:43.215] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:56:43.220] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:56:43.221] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:56:43.221] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:56:43.222] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:56:58.274] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:56:58.275] [p0] [INFO] === Round 42/50 STARTED ===
+[2025-12-07 20:56:58.275] [p0] [INFO] Current Virtual Time: 526.6544s
+[2025-12-07 20:56:58.275] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:57:13.633] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:57:13.634] [p0] [INFO] [COMPUTE] Real CPU Time: 13.1507s
+[2025-12-07 20:57:13.634] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:57:13.634] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:57:13.634] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:57:13.634] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:57:13.634] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:57:13.635] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:57:13.635] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:57:13.636] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:57:13.636] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:57:13.636] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:57:13.636] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:57:13.637] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:57:13.637] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:57:13.637] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:57:13.637] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:57:13.637] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:57:13.637] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:57:13.642] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:57:13.643] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:57:13.644] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:57:13.644] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:57:28.696] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:57:28.697] [p0] [INFO] === Round 43/50 STARTED ===
+[2025-12-07 20:57:28.697] [p0] [INFO] Current Virtual Time: 540.0026s
+[2025-12-07 20:57:28.697] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:57:43.834] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:57:43.835] [p0] [INFO] [COMPUTE] Real CPU Time: 13.0625s
+[2025-12-07 20:57:43.835] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:57:43.835] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:57:43.835] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:57:43.835] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:57:43.835] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:57:43.835] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:57:43.836] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:57:43.837] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:57:43.837] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:57:43.837] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:57:43.838] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:57:43.838] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:57:43.838] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:57:43.839] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:57:43.839] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:57:43.839] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:57:43.839] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:57:43.844] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:57:43.845] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:57:43.846] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:57:43.846] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:57:58.883] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:57:58.884] [p0] [INFO] === Round 44/50 STARTED ===
+[2025-12-07 20:57:58.884] [p0] [INFO] Current Virtual Time: 553.2626s
+[2025-12-07 20:57:58.885] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:58:11.493] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:58:11.494] [p0] [INFO] [COMPUTE] Real CPU Time: 12.4196s
+[2025-12-07 20:58:11.494] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:58:11.494] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:58:11.494] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:58:11.494] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:58:11.494] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:58:11.494] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:58:11.495] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:58:11.495] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:58:11.496] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:58:11.496] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:58:11.496] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:58:11.496] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:58:11.497] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:58:11.497] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:58:11.497] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:58:11.497] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:58:11.497] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:58:11.502] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:58:11.503] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:58:11.504] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:58:11.504] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:58:26.538] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:58:26.539] [p0] [INFO] === Round 45/50 STARTED ===
+[2025-12-07 20:58:26.539] [p0] [INFO] Current Virtual Time: 565.8796s
+[2025-12-07 20:58:26.539] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:58:38.621] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:58:38.621] [p0] [INFO] [COMPUTE] Real CPU Time: 12.3439s
+[2025-12-07 20:58:38.621] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:58:38.621] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:58:38.621] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:58:38.621] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:58:38.621] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:58:38.621] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:58:38.622] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:58:38.622] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:58:38.622] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:58:38.623] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:58:38.623] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:58:38.623] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:58:38.623] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:58:38.624] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:58:38.624] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:58:38.624] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:58:38.624] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:58:38.629] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:58:38.630] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:58:38.630] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:58:38.631] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:58:53.671] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:58:53.671] [p0] [INFO] === Round 46/50 STARTED ===
+[2025-12-07 20:58:53.671] [p0] [INFO] Current Virtual Time: 578.4210s
+[2025-12-07 20:58:53.671] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:59:06.429] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:59:06.430] [p0] [INFO] [COMPUTE] Real CPU Time: 12.0821s
+[2025-12-07 20:59:06.430] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:59:06.430] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:59:06.430] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:59:06.430] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:59:06.430] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:59:06.430] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:59:06.431] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:59:06.432] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:59:06.432] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:59:06.432] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:59:06.432] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:59:06.433] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:59:06.433] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:59:06.433] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:59:06.433] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:59:06.433] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:59:06.433] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:59:06.438] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:59:06.440] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:59:06.440] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:59:06.440] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:59:21.472] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:59:21.473] [p0] [INFO] === Round 47/50 STARTED ===
+[2025-12-07 20:59:21.473] [p0] [INFO] Current Virtual Time: 590.7005s
+[2025-12-07 20:59:21.473] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:59:33.666] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:59:33.667] [p0] [INFO] [COMPUTE] Real CPU Time: 12.2336s
+[2025-12-07 20:59:33.667] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:59:33.667] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 20:59:33.667] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:59:33.667] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:59:33.668] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 20:59:33.668] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 20:59:33.669] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 20:59:33.669] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 20:59:33.669] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 20:59:33.670] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 20:59:33.670] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 20:59:33.670] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 20:59:33.671] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 20:59:33.671] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 20:59:33.671] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 20:59:33.671] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 20:59:33.671] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 20:59:33.676] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 20:59:33.677] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 20:59:33.677] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 20:59:33.678] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:59:48.717] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 20:59:48.718] [p0] [INFO] === Round 48/50 STARTED ===
+[2025-12-07 20:59:48.718] [p0] [INFO] Current Virtual Time: 603.1316s
+[2025-12-07 20:59:48.718] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 21:00:00.595] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 21:00:00.595] [p0] [INFO] [COMPUTE] Real CPU Time: 12.1923s
+[2025-12-07 21:00:00.596] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 21:00:00.596] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 21:00:00.596] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 21:00:00.596] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 21:00:00.596] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 21:00:00.596] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 21:00:00.597] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 21:00:00.597] [p0] [DEBUG] [COORDINATOR] Received model from p7
+[2025-12-07 21:00:00.598] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 21:00:00.598] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 21:00:00.598] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 21:00:00.598] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 21:00:00.599] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 21:00:00.599] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 21:00:00.599] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 21:00:00.599] [p0] [INFO] [COORDINATOR] All 10 models received via message passing
+[2025-12-07 21:00:00.599] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 21:00:00.604] [p0] [INFO] [AGGREGATION] Aggregating 10 models using FedAvg
+[2025-12-07 21:00:00.605] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 21:00:00.605] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 21:00:00.606] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 21:00:15.642] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 21:00:15.642] [p0] [INFO] === Round 49/50 STARTED ===
+[2025-12-07 21:00:15.643] [p0] [INFO] Current Virtual Time: 615.5213s
+[2025-12-07 21:00:15.643] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 21:00:25.469] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 21:00:25.469] [p0] [INFO] [COMPUTE] Real CPU Time: 11.3577s
+[2025-12-07 21:00:25.469] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 21:00:25.469] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 21:00:25.469] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 21:00:25.469] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 21:00:25.469] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 21:00:25.469] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 21:00:25.470] [p0] [DEBUG] [COORDINATOR] Received model from p4
+[2025-12-07 21:00:25.471] [p0] [DEBUG] [COORDINATOR] Received model from p2
+[2025-12-07 21:00:25.471] [p0] [DEBUG] [COORDINATOR] Received model from p9
+[2025-12-07 21:00:25.471] [p0] [DEBUG] [COORDINATOR] Received model from p6
+[2025-12-07 21:00:25.472] [p0] [DEBUG] [COORDINATOR] Received model from p1
+[2025-12-07 21:00:25.472] [p0] [DEBUG] [COORDINATOR] Received model from p8
+[2025-12-07 21:00:25.472] [p0] [DEBUG] [COORDINATOR] Received model from p3
+[2025-12-07 21:00:25.472] [p0] [DEBUG] [COORDINATOR] Received model from p5
+[2025-12-07 21:00:30.551] [p0] [WARN] [COORDINATOR] Received 9/10 models
+[2025-12-07 21:00:30.552] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 21:00:30.570] [p0] [INFO] [AGGREGATION] Aggregating 9 models using FedAvg
+[2025-12-07 21:00:30.572] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 21:00:30.576] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 21:00:30.577] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 21:02:08.035] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 21:02:08.090] [p0] [INFO] === Round 50/50 STARTED ===
+[2025-12-07 21:02:08.091] [p0] [INFO] Current Virtual Time: 627.0764s
+[2025-12-07 21:02:08.091] [p0] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 21:02:14.640] [p0] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 21:02:14.640] [p0] [INFO] [COMPUTE] Real CPU Time: 8.6339s
+[2025-12-07 21:02:14.640] [p0] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 21:02:14.640] [p0] [INFO] [NETWORK] Protocol: FedAvg | Action: Receiving models from workers
+[2025-12-07 21:02:14.640] [p0] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 21:02:14.640] [p0] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 21:02:14.640] [p0] [DEBUG] Coordinator will aggregate own model
+[2025-12-07 21:02:14.640] [p0] [INFO] [COORDINATOR] Waiting for all worker models via message passing...
+[2025-12-07 21:02:19.689] [p0] [WARN] [COORDINATOR] Received 1/10 models
+[2025-12-07 21:02:19.689] [p0] [INFO] [COORDINATOR] Starting model aggregation...
+[2025-12-07 21:02:19.693] [p0] [INFO] [AGGREGATION] Aggregating 1 models using FedAvg
+[2025-12-07 21:02:19.695] [p0] [INFO] [COORDINATOR] Aggregation completed, broadcasting via message passing...
+[2025-12-07 21:02:19.695] [p0] [INFO] [COORDINATOR] Broadcasted aggregated model to 10 nodes via message passing
+[2025-12-07 21:02:19.697] [p0] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 21:02:34.741] [p0] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 21:02:34.743] [p0] [INFO] ================================================================================
+[2025-12-07 21:02:34.743] [p0] [INFO] Process 0 completed all 50 rounds
+[2025-12-07 21:02:34.743] [p0] [INFO] Final Statistics: Accuracy=0.00%, Virtual Time=635.91s, Total Data=12.34 MB, Total Messages=50
+[2025-12-07 21:02:34.743] [p0] [INFO] ================================================================================

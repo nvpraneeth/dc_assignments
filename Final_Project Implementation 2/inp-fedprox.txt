@@ -1,0 +1,3 @@
+# Columns: N (nodes), R_max (rounds), E (local epochs), B (bandwidth Mbps), Protocol ID, C (candidate set size), MU (FedProx coefficient)
+10,50,5,10.0,5,5,0.1
+

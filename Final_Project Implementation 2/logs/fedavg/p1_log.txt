@@ -1,0 +1,1056 @@
+================================================================================
+Process 1 - FedAvg (Centralized) Protocol
+Started at: 2025-12-07 16:45:54
+================================================================================
+
+[2025-12-07 16:45:54.922] [p1] [INFO] Model initialized: 61706 parameters
+[2025-12-07 16:45:54.922] [p1] [INFO] [INIT] Process 1 initialized
+[2025-12-07 16:45:54.922] [p1] [INFO] [INIT] System: 10 nodes | Local epochs: 5 | Bandwidth: 10.0 Mbps
+[2025-12-07 16:45:54.922] [p1] [INFO] [INIT] Model: LeNet-5 | Dataset: MNIST (Non-IID)
+[2025-12-07 16:45:54.922] [p1] [INFO] Training dataset size: 6044 samples
+[2025-12-07 16:45:54.922] [p1] [INFO] Test dataset size: 10000 samples
+[2025-12-07 16:45:54.922] [p1] [INFO] === Round 1/50 STARTED ===
+[2025-12-07 16:45:54.922] [p1] [INFO] Current Virtual Time: 0.0000s
+[2025-12-07 16:45:54.922] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 16:46:18.537] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 16:46:18.538] [p1] [INFO] [COMPUTE] Real CPU Time: 16.2255s
+[2025-12-07 16:46:18.538] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 16:46:18.538] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 16:46:18.538] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 16:46:18.538] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 16:46:18.539] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 16:46:18.540] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 16:46:18.909] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 16:46:18.911] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 16:46:18.911] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 16:46:18.911] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 16:46:18.911] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 16:46:20.954] [p1] [INFO] [TESTING] Test accuracy: 8.92%
+[2025-12-07 16:46:20.954] [p1] [INFO] [STATS] Round: 1 | Virtual Time: 16.6204s | Accuracy: 8.92% | Data: 0.4936 MB | Messages: 2
+[2025-12-07 16:46:20.958] [p1] [INFO] === Round 1 COMPLETED ===
+[2025-12-07 16:46:20.959] [p1] [INFO] New Virtual Time: 16.6204s | Accuracy: 8.92%
+[2025-12-07 16:46:20.959] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 16:46:20.959] [p1] [INFO] === Round 2/50 STARTED ===
+[2025-12-07 16:46:20.959] [p1] [INFO] Current Virtual Time: 16.6204s
+[2025-12-07 16:46:20.960] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 16:46:42.053] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 16:46:42.053] [p1] [INFO] [COMPUTE] Real CPU Time: 16.5833s
+[2025-12-07 16:46:42.053] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 16:46:42.053] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 16:46:42.053] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 16:46:42.053] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 16:46:42.054] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 16:46:42.054] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 17:03:07.873] [p1] [ERROR] Timeout waiting for aggregated model - skipping round
+[2025-12-07 17:03:07.933] [p1] [INFO] === Round 3/50 STARTED ===
+[2025-12-07 17:03:07.936] [p1] [INFO] Current Virtual Time: 33.4012s
+[2025-12-07 17:03:07.936] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 17:20:33.213] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 17:20:33.214] [p1] [INFO] [COMPUTE] Real CPU Time: 16.1640s
+[2025-12-07 17:20:33.214] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 17:20:33.214] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 17:20:33.214] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 17:20:33.214] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 17:20:33.214] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 17:20:33.215] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 17:20:33.216] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 17:20:33.217] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 17:20:33.217] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 17:20:33.217] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 17:20:33.217] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 17:37:56.102] [p1] [INFO] [TESTING] Test accuracy: 29.52%
+[2025-12-07 17:37:56.102] [p1] [INFO] [STATS] Round: 3 | Virtual Time: 49.9600s | Accuracy: 29.52% | Data: 1.2341 MB | Messages: 5
+[2025-12-07 17:37:56.103] [p1] [INFO] === Round 3 COMPLETED ===
+[2025-12-07 17:37:56.103] [p1] [INFO] New Virtual Time: 49.9600s | Accuracy: 29.52%
+[2025-12-07 17:37:56.103] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 17:37:56.103] [p1] [INFO] === Round 4/50 STARTED ===
+[2025-12-07 17:37:56.103] [p1] [INFO] Current Virtual Time: 49.9600s
+[2025-12-07 17:37:56.103] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:11:36.189] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:11:36.189] [p1] [INFO] [COMPUTE] Real CPU Time: 16.7816s
+[2025-12-07 18:11:36.189] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:11:36.190] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:11:36.190] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:11:36.190] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:11:36.190] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:11:36.191] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:11:36.192] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:11:36.193] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:11:36.193] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:11:36.193] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:11:36.193] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:11:41.150] [p1] [INFO] [TESTING] Test accuracy: 29.85%
+[2025-12-07 18:11:41.150] [p1] [INFO] [STATS] Round: 4 | Virtual Time: 67.1365s | Accuracy: 29.85% | Data: 1.7278 MB | Messages: 7
+[2025-12-07 18:11:41.150] [p1] [INFO] === Round 4 COMPLETED ===
+[2025-12-07 18:11:41.150] [p1] [INFO] New Virtual Time: 67.1365s | Accuracy: 29.85%
+[2025-12-07 18:11:41.150] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:11:41.151] [p1] [INFO] === Round 5/50 STARTED ===
+[2025-12-07 18:11:41.151] [p1] [INFO] Current Virtual Time: 67.1365s
+[2025-12-07 18:11:41.151] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:17:12.515] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:17:12.516] [p1] [INFO] [COMPUTE] Real CPU Time: 16.2377s
+[2025-12-07 18:17:12.516] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:17:12.516] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:17:12.516] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:17:12.516] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:17:12.516] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:17:12.518] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:17:12.519] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:17:12.520] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:17:12.520] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:17:12.520] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:17:12.520] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:17:15.023] [p1] [INFO] [TESTING] Test accuracy: 46.11%
+[2025-12-07 18:17:15.030] [p1] [INFO] [STATS] Round: 5 | Virtual Time: 83.7692s | Accuracy: 46.11% | Data: 2.2214 MB | Messages: 9
+[2025-12-07 18:17:15.031] [p1] [INFO] === Round 5 COMPLETED ===
+[2025-12-07 18:17:15.031] [p1] [INFO] New Virtual Time: 83.7692s | Accuracy: 46.11%
+[2025-12-07 18:17:15.031] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:17:15.031] [p1] [INFO] === Round 6/50 STARTED ===
+[2025-12-07 18:17:15.031] [p1] [INFO] Current Virtual Time: 83.7692s
+[2025-12-07 18:17:15.031] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:17:38.214] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:17:38.215] [p1] [INFO] [COMPUTE] Real CPU Time: 16.7483s
+[2025-12-07 18:17:38.215] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:17:38.215] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:17:38.215] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:17:38.215] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:17:38.215] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:17:38.216] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:17:40.070] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:17:40.070] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:17:40.070] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:17:40.070] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:17:40.070] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:17:42.270] [p1] [INFO] [TESTING] Test accuracy: 56.33%
+[2025-12-07 18:17:42.270] [p1] [INFO] [STATS] Round: 6 | Virtual Time: 100.9124s | Accuracy: 56.33% | Data: 2.7151 MB | Messages: 11
+[2025-12-07 18:17:42.270] [p1] [INFO] === Round 6 COMPLETED ===
+[2025-12-07 18:17:42.270] [p1] [INFO] New Virtual Time: 100.9124s | Accuracy: 56.33%
+[2025-12-07 18:17:42.270] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:17:42.270] [p1] [INFO] === Round 7/50 STARTED ===
+[2025-12-07 18:17:42.270] [p1] [INFO] Current Virtual Time: 100.9124s
+[2025-12-07 18:17:42.270] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:18:05.235] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:18:05.236] [p1] [INFO] [COMPUTE] Real CPU Time: 17.1750s
+[2025-12-07 18:18:05.236] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:18:05.236] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:18:05.236] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:18:05.236] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:18:05.236] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:18:05.237] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:18:08.546] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:18:08.547] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:18:08.547] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:18:08.547] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:18:08.547] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:18:10.447] [p1] [INFO] [TESTING] Test accuracy: 74.12%
+[2025-12-07 18:18:10.448] [p1] [INFO] [STATS] Round: 7 | Virtual Time: 118.4823s | Accuracy: 74.12% | Data: 3.2087 MB | Messages: 13
+[2025-12-07 18:18:10.448] [p1] [INFO] === Round 7 COMPLETED ===
+[2025-12-07 18:18:10.448] [p1] [INFO] New Virtual Time: 118.4823s | Accuracy: 74.12%
+[2025-12-07 18:18:10.448] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:18:10.448] [p1] [INFO] === Round 8/50 STARTED ===
+[2025-12-07 18:18:10.448] [p1] [INFO] Current Virtual Time: 118.4823s
+[2025-12-07 18:18:10.448] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:18:33.405] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:18:33.405] [p1] [INFO] [COMPUTE] Real CPU Time: 17.1625s
+[2025-12-07 18:18:33.405] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:18:33.405] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:18:33.405] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:18:33.406] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:18:33.406] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:18:33.406] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:18:37.086] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:18:37.087] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:18:37.087] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:18:37.087] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:18:37.087] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:18:39.121] [p1] [INFO] [TESTING] Test accuracy: 71.96%
+[2025-12-07 18:18:39.121] [p1] [INFO] [STATS] Round: 8 | Virtual Time: 136.0397s | Accuracy: 71.96% | Data: 3.7024 MB | Messages: 15
+[2025-12-07 18:18:39.121] [p1] [INFO] === Round 8 COMPLETED ===
+[2025-12-07 18:18:39.121] [p1] [INFO] New Virtual Time: 136.0397s | Accuracy: 71.96%
+[2025-12-07 18:18:39.122] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:18:39.122] [p1] [INFO] === Round 9/50 STARTED ===
+[2025-12-07 18:18:39.122] [p1] [INFO] Current Virtual Time: 136.0397s
+[2025-12-07 18:18:39.122] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:19:02.611] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:19:02.612] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6431s
+[2025-12-07 18:19:02.612] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:19:02.612] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:19:02.612] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:02.612] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:19:02.612] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:19:02.613] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:19:06.312] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:19:06.313] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:19:06.314] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:19:06.314] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:06.314] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:19:08.810] [p1] [INFO] [TESTING] Test accuracy: 77.36%
+[2025-12-07 18:19:08.810] [p1] [INFO] [STATS] Round: 9 | Virtual Time: 153.0777s | Accuracy: 77.36% | Data: 4.1960 MB | Messages: 17
+[2025-12-07 18:19:08.811] [p1] [INFO] === Round 9 COMPLETED ===
+[2025-12-07 18:19:08.811] [p1] [INFO] New Virtual Time: 153.0777s | Accuracy: 77.36%
+[2025-12-07 18:19:08.811] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:19:08.811] [p1] [INFO] === Round 10/50 STARTED ===
+[2025-12-07 18:19:08.811] [p1] [INFO] Current Virtual Time: 153.0777s
+[2025-12-07 18:19:08.811] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:19:30.135] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:19:30.135] [p1] [INFO] [COMPUTE] Real CPU Time: 16.3140s
+[2025-12-07 18:19:30.135] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:19:30.136] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:19:30.136] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:30.136] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:19:30.136] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:19:30.137] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:19:33.367] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:19:33.368] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:19:33.368] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:19:33.368] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:33.368] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:19:35.317] [p1] [INFO] [TESTING] Test accuracy: 76.94%
+[2025-12-07 18:19:35.317] [p1] [INFO] [STATS] Round: 10 | Virtual Time: 169.7866s | Accuracy: 76.94% | Data: 4.6897 MB | Messages: 19
+[2025-12-07 18:19:35.318] [p1] [INFO] === Round 10 COMPLETED ===
+[2025-12-07 18:19:35.318] [p1] [INFO] New Virtual Time: 169.7866s | Accuracy: 76.94%
+[2025-12-07 18:19:35.318] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:19:35.318] [p1] [INFO] === Round 11/50 STARTED ===
+[2025-12-07 18:19:35.318] [p1] [INFO] Current Virtual Time: 169.7866s
+[2025-12-07 18:19:35.318] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:19:55.402] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:19:55.403] [p1] [INFO] [COMPUTE] Real CPU Time: 16.7807s
+[2025-12-07 18:19:55.403] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:19:55.403] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:19:55.403] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:55.403] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:19:55.403] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:19:55.405] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:19:58.960] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:19:58.961] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:19:58.961] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:19:58.961] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:19:58.961] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:20:01.004] [p1] [INFO] [TESTING] Test accuracy: 80.27%
+[2025-12-07 18:20:01.005] [p1] [INFO] [STATS] Round: 11 | Virtual Time: 186.9622s | Accuracy: 80.27% | Data: 5.1833 MB | Messages: 21
+[2025-12-07 18:20:01.005] [p1] [INFO] === Round 11 COMPLETED ===
+[2025-12-07 18:20:01.005] [p1] [INFO] New Virtual Time: 186.9622s | Accuracy: 80.27%
+[2025-12-07 18:20:01.005] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:20:01.005] [p1] [INFO] === Round 12/50 STARTED ===
+[2025-12-07 18:20:01.005] [p1] [INFO] Current Virtual Time: 186.9622s
+[2025-12-07 18:20:01.005] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:20:20.817] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:20:20.818] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6882s
+[2025-12-07 18:20:20.818] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:20:20.818] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:20:20.818] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:20:20.818] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:20:20.818] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:20:20.819] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:20:24.710] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:20:24.710] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:20:24.711] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:20:24.711] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:20:24.711] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:20:26.643] [p1] [INFO] [TESTING] Test accuracy: 78.06%
+[2025-12-07 18:20:26.644] [p1] [INFO] [STATS] Round: 12 | Virtual Time: 204.0454s | Accuracy: 78.06% | Data: 5.6770 MB | Messages: 23
+[2025-12-07 18:20:26.644] [p1] [INFO] === Round 12 COMPLETED ===
+[2025-12-07 18:20:26.644] [p1] [INFO] New Virtual Time: 204.0454s | Accuracy: 78.06%
+[2025-12-07 18:20:26.645] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:20:26.645] [p1] [INFO] === Round 13/50 STARTED ===
+[2025-12-07 18:20:26.645] [p1] [INFO] Current Virtual Time: 204.0454s
+[2025-12-07 18:20:26.645] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:20:46.621] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:20:46.621] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6843s
+[2025-12-07 18:20:46.622] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:20:46.622] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:20:46.622] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:20:46.622] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:20:46.622] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:20:46.623] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:20:50.247] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:20:50.247] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:20:50.248] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:20:50.248] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:20:50.248] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:20:52.516] [p1] [INFO] [TESTING] Test accuracy: 80.74%
+[2025-12-07 18:20:52.516] [p1] [INFO] [STATS] Round: 13 | Virtual Time: 221.1247s | Accuracy: 80.74% | Data: 6.1706 MB | Messages: 25
+[2025-12-07 18:20:52.516] [p1] [INFO] === Round 13 COMPLETED ===
+[2025-12-07 18:20:52.517] [p1] [INFO] New Virtual Time: 221.1247s | Accuracy: 80.74%
+[2025-12-07 18:20:52.517] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:20:52.517] [p1] [INFO] === Round 14/50 STARTED ===
+[2025-12-07 18:20:52.517] [p1] [INFO] Current Virtual Time: 221.1247s
+[2025-12-07 18:20:52.517] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:21:16.864] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:21:16.865] [p1] [INFO] [COMPUTE] Real CPU Time: 16.8172s
+[2025-12-07 18:21:16.865] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:21:16.865] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:21:16.865] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:21:16.865] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:21:16.865] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:21:16.866] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:21:19.968] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:21:19.969] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:21:19.969] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:21:19.969] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:21:19.969] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:21:22.521] [p1] [INFO] [TESTING] Test accuracy: 78.05%
+[2025-12-07 18:21:22.521] [p1] [INFO] [STATS] Round: 14 | Virtual Time: 238.3368s | Accuracy: 78.05% | Data: 6.6642 MB | Messages: 27
+[2025-12-07 18:21:22.521] [p1] [INFO] === Round 14 COMPLETED ===
+[2025-12-07 18:21:22.521] [p1] [INFO] New Virtual Time: 238.3368s | Accuracy: 78.05%
+[2025-12-07 18:21:22.521] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:21:22.521] [p1] [INFO] === Round 15/50 STARTED ===
+[2025-12-07 18:21:22.521] [p1] [INFO] Current Virtual Time: 238.3368s
+[2025-12-07 18:21:22.521] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:21:45.118] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:21:45.118] [p1] [INFO] [COMPUTE] Real CPU Time: 17.0057s
+[2025-12-07 18:21:45.118] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:21:45.118] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:21:45.119] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:21:45.119] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:21:45.119] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:21:45.119] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:21:48.250] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:21:48.250] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:21:48.250] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:21:48.250] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:21:48.250] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:21:50.561] [p1] [INFO] [TESTING] Test accuracy: 79.27%
+[2025-12-07 18:21:50.561] [p1] [INFO] [STATS] Round: 15 | Virtual Time: 255.7375s | Accuracy: 79.27% | Data: 7.1579 MB | Messages: 29
+[2025-12-07 18:21:50.561] [p1] [INFO] === Round 15 COMPLETED ===
+[2025-12-07 18:21:50.562] [p1] [INFO] New Virtual Time: 255.7375s | Accuracy: 79.27%
+[2025-12-07 18:21:50.562] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:21:50.562] [p1] [INFO] === Round 16/50 STARTED ===
+[2025-12-07 18:21:50.562] [p1] [INFO] Current Virtual Time: 255.7375s
+[2025-12-07 18:21:50.562] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:22:12.364] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:22:12.365] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6254s
+[2025-12-07 18:22:12.365] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:22:12.366] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:22:12.366] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:22:12.366] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:22:12.366] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:22:12.367] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:22:15.526] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:22:15.527] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:22:15.527] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:22:15.527] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:22:15.527] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:22:17.199] [p1] [INFO] [TESTING] Test accuracy: 75.54%
+[2025-12-07 18:22:17.199] [p1] [INFO] [STATS] Round: 16 | Virtual Time: 272.7578s | Accuracy: 75.54% | Data: 7.6515 MB | Messages: 31
+[2025-12-07 18:22:17.199] [p1] [INFO] === Round 16 COMPLETED ===
+[2025-12-07 18:22:17.199] [p1] [INFO] New Virtual Time: 272.7578s | Accuracy: 75.54%
+[2025-12-07 18:22:17.200] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:22:17.200] [p1] [INFO] === Round 17/50 STARTED ===
+[2025-12-07 18:22:17.200] [p1] [INFO] Current Virtual Time: 272.7578s
+[2025-12-07 18:22:17.200] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:22:37.562] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:22:37.562] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6435s
+[2025-12-07 18:22:37.562] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:22:37.563] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:22:37.563] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:22:37.563] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:22:37.563] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:22:37.563] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:22:41.144] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:22:41.144] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:22:41.144] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:22:41.144] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:22:41.144] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:22:43.357] [p1] [INFO] [TESTING] Test accuracy: 70.79%
+[2025-12-07 18:22:43.358] [p1] [INFO] [STATS] Round: 17 | Virtual Time: 289.7963s | Accuracy: 70.79% | Data: 8.1452 MB | Messages: 33
+[2025-12-07 18:22:43.358] [p1] [INFO] === Round 17 COMPLETED ===
+[2025-12-07 18:22:43.358] [p1] [INFO] New Virtual Time: 289.7963s | Accuracy: 70.79%
+[2025-12-07 18:22:43.358] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:22:43.358] [p1] [INFO] === Round 18/50 STARTED ===
+[2025-12-07 18:22:43.358] [p1] [INFO] Current Virtual Time: 289.7963s
+[2025-12-07 18:22:43.358] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:23:03.901] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:23:03.902] [p1] [INFO] [COMPUTE] Real CPU Time: 16.3014s
+[2025-12-07 18:23:03.902] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:23:03.902] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:23:03.902] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:03.902] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:23:03.902] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:23:03.902] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:23:07.235] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:23:07.236] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:23:07.236] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:23:07.236] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:07.236] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:23:08.955] [p1] [INFO] [TESTING] Test accuracy: 71.89%
+[2025-12-07 18:23:08.955] [p1] [INFO] [STATS] Round: 18 | Virtual Time: 306.4925s | Accuracy: 71.89% | Data: 8.6388 MB | Messages: 35
+[2025-12-07 18:23:08.956] [p1] [INFO] === Round 18 COMPLETED ===
+[2025-12-07 18:23:08.956] [p1] [INFO] New Virtual Time: 306.4925s | Accuracy: 71.89%
+[2025-12-07 18:23:08.956] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:23:08.956] [p1] [INFO] === Round 19/50 STARTED ===
+[2025-12-07 18:23:08.956] [p1] [INFO] Current Virtual Time: 306.4925s
+[2025-12-07 18:23:08.956] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:23:29.264] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:23:29.265] [p1] [INFO] [COMPUTE] Real CPU Time: 16.5678s
+[2025-12-07 18:23:29.265] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:23:29.265] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:23:29.265] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:29.265] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:23:29.265] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:23:29.266] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:23:32.940] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:23:32.941] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:23:32.941] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:23:32.941] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:32.941] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:23:35.326] [p1] [INFO] [TESTING] Test accuracy: 67.24%
+[2025-12-07 18:23:35.326] [p1] [INFO] [STATS] Round: 19 | Virtual Time: 323.4553s | Accuracy: 67.24% | Data: 9.1325 MB | Messages: 37
+[2025-12-07 18:23:35.326] [p1] [INFO] === Round 19 COMPLETED ===
+[2025-12-07 18:23:35.326] [p1] [INFO] New Virtual Time: 323.4553s | Accuracy: 67.24%
+[2025-12-07 18:23:35.326] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:23:35.326] [p1] [INFO] === Round 20/50 STARTED ===
+[2025-12-07 18:23:35.326] [p1] [INFO] Current Virtual Time: 323.4553s
+[2025-12-07 18:23:35.326] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:23:55.303] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:23:55.304] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6785s
+[2025-12-07 18:23:55.304] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:23:55.304] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:23:55.304] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:55.304] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:23:55.304] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:23:55.305] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:23:58.593] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:23:58.593] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:23:58.593] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:23:58.593] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:23:58.593] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:24:00.814] [p1] [INFO] [TESTING] Test accuracy: 70.82%
+[2025-12-07 18:24:00.814] [p1] [INFO] [STATS] Round: 20 | Virtual Time: 340.5287s | Accuracy: 70.82% | Data: 9.6261 MB | Messages: 39
+[2025-12-07 18:24:00.814] [p1] [INFO] === Round 20 COMPLETED ===
+[2025-12-07 18:24:00.814] [p1] [INFO] New Virtual Time: 340.5287s | Accuracy: 70.82%
+[2025-12-07 18:24:00.814] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:24:00.814] [p1] [INFO] === Round 21/50 STARTED ===
+[2025-12-07 18:24:00.815] [p1] [INFO] Current Virtual Time: 340.5287s
+[2025-12-07 18:24:00.815] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:24:20.756] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:24:20.756] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6659s
+[2025-12-07 18:24:20.757] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:24:20.757] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:24:20.757] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:24:20.757] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:24:20.757] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:24:20.759] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:24:24.119] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:24:24.119] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:24:24.120] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:24:24.120] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:24:24.120] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:24:26.235] [p1] [INFO] [TESTING] Test accuracy: 68.33%
+[2025-12-07 18:24:26.235] [p1] [INFO] [STATS] Round: 21 | Virtual Time: 357.5896s | Accuracy: 68.33% | Data: 10.1198 MB | Messages: 41
+[2025-12-07 18:24:26.236] [p1] [INFO] === Round 21 COMPLETED ===
+[2025-12-07 18:24:26.236] [p1] [INFO] New Virtual Time: 357.5896s | Accuracy: 68.33%
+[2025-12-07 18:24:26.236] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:24:26.236] [p1] [INFO] === Round 22/50 STARTED ===
+[2025-12-07 18:24:26.236] [p1] [INFO] Current Virtual Time: 357.5896s
+[2025-12-07 18:24:26.236] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:24:45.850] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:24:45.850] [p1] [INFO] [COMPUTE] Real CPU Time: 16.5062s
+[2025-12-07 18:24:45.850] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:24:45.850] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:24:45.850] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:24:45.851] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:24:45.851] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:24:45.851] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:24:49.580] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:24:49.580] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:24:49.580] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:24:49.580] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:24:49.580] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:24:51.776] [p1] [INFO] [TESTING] Test accuracy: 76.84%
+[2025-12-07 18:24:51.776] [p1] [INFO] [STATS] Round: 22 | Virtual Time: 374.4907s | Accuracy: 76.84% | Data: 10.6134 MB | Messages: 43
+[2025-12-07 18:24:51.776] [p1] [INFO] === Round 22 COMPLETED ===
+[2025-12-07 18:24:51.776] [p1] [INFO] New Virtual Time: 374.4907s | Accuracy: 76.84%
+[2025-12-07 18:24:51.776] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:24:51.776] [p1] [INFO] === Round 23/50 STARTED ===
+[2025-12-07 18:24:51.776] [p1] [INFO] Current Virtual Time: 374.4907s
+[2025-12-07 18:24:51.776] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:25:11.915] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:25:11.916] [p1] [INFO] [COMPUTE] Real CPU Time: 16.4181s
+[2025-12-07 18:25:11.916] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:25:11.916] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:25:11.916] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:25:11.916] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:25:11.916] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:25:11.917] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:25:15.408] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:25:15.409] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:25:15.409] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:25:15.409] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:25:15.409] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:25:17.358] [p1] [INFO] [TESTING] Test accuracy: 71.56%
+[2025-12-07 18:25:17.358] [p1] [INFO] [STATS] Round: 23 | Virtual Time: 391.3037s | Accuracy: 71.56% | Data: 11.1071 MB | Messages: 45
+[2025-12-07 18:25:17.359] [p1] [INFO] === Round 23 COMPLETED ===
+[2025-12-07 18:25:17.359] [p1] [INFO] New Virtual Time: 391.3037s | Accuracy: 71.56%
+[2025-12-07 18:25:17.359] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:25:17.359] [p1] [INFO] === Round 24/50 STARTED ===
+[2025-12-07 18:25:17.359] [p1] [INFO] Current Virtual Time: 391.3037s
+[2025-12-07 18:25:17.359] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:25:37.350] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:25:37.351] [p1] [INFO] [COMPUTE] Real CPU Time: 16.5126s
+[2025-12-07 18:25:37.352] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:25:37.352] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:25:37.352] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:25:37.352] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:25:37.352] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:25:37.352] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:25:41.018] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:25:41.018] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:25:41.018] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:25:41.019] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:25:41.019] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:25:43.240] [p1] [INFO] [TESTING] Test accuracy: 77.24%
+[2025-12-07 18:25:43.240] [p1] [INFO] [STATS] Round: 24 | Virtual Time: 408.2112s | Accuracy: 77.24% | Data: 11.6007 MB | Messages: 47
+[2025-12-07 18:25:43.240] [p1] [INFO] === Round 24 COMPLETED ===
+[2025-12-07 18:25:43.240] [p1] [INFO] New Virtual Time: 408.2112s | Accuracy: 77.24%
+[2025-12-07 18:25:43.240] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:25:43.240] [p1] [INFO] === Round 25/50 STARTED ===
+[2025-12-07 18:25:43.241] [p1] [INFO] Current Virtual Time: 408.2112s
+[2025-12-07 18:25:43.241] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:26:04.977] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:26:04.978] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6369s
+[2025-12-07 18:26:04.978] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:26:04.978] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:26:04.978] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:26:04.978] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:26:04.978] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:26:04.980] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:26:08.546] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:26:08.546] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:26:08.546] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:26:08.546] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:26:08.546] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:26:10.507] [p1] [INFO] [TESTING] Test accuracy: 70.28%
+[2025-12-07 18:26:10.507] [p1] [INFO] [STATS] Round: 25 | Virtual Time: 425.2430s | Accuracy: 70.28% | Data: 12.0944 MB | Messages: 49
+[2025-12-07 18:26:10.507] [p1] [INFO] === Round 25 COMPLETED ===
+[2025-12-07 18:26:10.507] [p1] [INFO] New Virtual Time: 425.2430s | Accuracy: 70.28%
+[2025-12-07 18:26:10.507] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:26:10.507] [p1] [INFO] === Round 26/50 STARTED ===
+[2025-12-07 18:26:10.507] [p1] [INFO] Current Virtual Time: 425.2430s
+[2025-12-07 18:26:10.508] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:26:31.753] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:26:31.754] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6570s
+[2025-12-07 18:26:31.754] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:26:31.754] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:26:31.754] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:26:31.754] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:26:31.754] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:26:31.755] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:26:35.211] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:26:35.212] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:26:35.212] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:26:35.212] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:26:35.212] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:26:37.395] [p1] [INFO] [TESTING] Test accuracy: 75.80%
+[2025-12-07 18:26:37.395] [p1] [INFO] [STATS] Round: 26 | Virtual Time: 442.2950s | Accuracy: 75.80% | Data: 12.5880 MB | Messages: 51
+[2025-12-07 18:26:37.395] [p1] [INFO] === Round 26 COMPLETED ===
+[2025-12-07 18:26:37.395] [p1] [INFO] New Virtual Time: 442.2950s | Accuracy: 75.80%
+[2025-12-07 18:26:37.395] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:26:37.396] [p1] [INFO] === Round 27/50 STARTED ===
+[2025-12-07 18:26:37.396] [p1] [INFO] Current Virtual Time: 442.2950s
+[2025-12-07 18:26:37.396] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:26:58.110] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:26:58.110] [p1] [INFO] [COMPUTE] Real CPU Time: 16.1266s
+[2025-12-07 18:26:58.110] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:26:58.110] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:26:58.110] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:26:58.110] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:26:58.111] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:26:58.111] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:27:01.956] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:27:01.959] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:27:01.959] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:27:01.959] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:27:01.959] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:27:04.225] [p1] [INFO] [TESTING] Test accuracy: 75.08%
+[2025-12-07 18:27:04.225] [p1] [INFO] [STATS] Round: 27 | Virtual Time: 458.8165s | Accuracy: 75.08% | Data: 13.0817 MB | Messages: 53
+[2025-12-07 18:27:04.225] [p1] [INFO] === Round 27 COMPLETED ===
+[2025-12-07 18:27:04.225] [p1] [INFO] New Virtual Time: 458.8165s | Accuracy: 75.08%
+[2025-12-07 18:27:04.225] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:27:04.225] [p1] [INFO] === Round 28/50 STARTED ===
+[2025-12-07 18:27:04.225] [p1] [INFO] Current Virtual Time: 458.8165s
+[2025-12-07 18:27:04.226] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:27:31.538] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:27:31.538] [p1] [INFO] [COMPUTE] Real CPU Time: 16.5333s
+[2025-12-07 18:27:31.538] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:27:31.538] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:27:31.538] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:27:31.538] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:27:31.539] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:27:31.539] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:27:34.613] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:27:34.615] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:27:34.615] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:27:34.615] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:27:34.615] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:27:37.124] [p1] [INFO] [TESTING] Test accuracy: 79.52%
+[2025-12-07 18:27:37.125] [p1] [INFO] [STATS] Round: 28 | Virtual Time: 475.7447s | Accuracy: 79.52% | Data: 13.5753 MB | Messages: 55
+[2025-12-07 18:27:37.125] [p1] [INFO] === Round 28 COMPLETED ===
+[2025-12-07 18:27:37.125] [p1] [INFO] New Virtual Time: 475.7447s | Accuracy: 79.52%
+[2025-12-07 18:27:37.125] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:27:37.125] [p1] [INFO] === Round 29/50 STARTED ===
+[2025-12-07 18:27:37.125] [p1] [INFO] Current Virtual Time: 475.7447s
+[2025-12-07 18:27:37.125] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:27:58.765] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:27:58.765] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6936s
+[2025-12-07 18:27:58.765] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:27:58.765] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:27:58.765] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:27:58.765] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:27:58.766] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:27:58.766] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:28:01.720] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:28:01.720] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:28:01.720] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:28:01.720] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:01.720] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:28:04.295] [p1] [INFO] [TESTING] Test accuracy: 81.27%
+[2025-12-07 18:28:04.295] [p1] [INFO] [STATS] Round: 29 | Virtual Time: 492.8333s | Accuracy: 81.27% | Data: 14.0690 MB | Messages: 57
+[2025-12-07 18:28:04.295] [p1] [INFO] === Round 29 COMPLETED ===
+[2025-12-07 18:28:04.296] [p1] [INFO] New Virtual Time: 492.8333s | Accuracy: 81.27%
+[2025-12-07 18:28:04.296] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:28:04.296] [p1] [INFO] === Round 30/50 STARTED ===
+[2025-12-07 18:28:04.296] [p1] [INFO] Current Virtual Time: 492.8333s
+[2025-12-07 18:28:04.296] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:28:24.688] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:28:24.688] [p1] [INFO] [COMPUTE] Real CPU Time: 16.7302s
+[2025-12-07 18:28:24.688] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:28:24.688] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:28:24.688] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:24.688] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:28:24.689] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:28:24.689] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:28:28.274] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:28:28.276] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:28:28.276] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:28:28.276] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:28.276] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:28:30.580] [p1] [INFO] [TESTING] Test accuracy: 87.08%
+[2025-12-07 18:28:30.580] [p1] [INFO] [STATS] Round: 30 | Virtual Time: 509.9583s | Accuracy: 87.08% | Data: 14.5626 MB | Messages: 59
+[2025-12-07 18:28:30.580] [p1] [INFO] === Round 30 COMPLETED ===
+[2025-12-07 18:28:30.580] [p1] [INFO] New Virtual Time: 509.9583s | Accuracy: 87.08%
+[2025-12-07 18:28:30.580] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:28:30.580] [p1] [INFO] === Round 31/50 STARTED ===
+[2025-12-07 18:28:30.580] [p1] [INFO] Current Virtual Time: 509.9583s
+[2025-12-07 18:28:30.580] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:28:51.039] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:28:51.040] [p1] [INFO] [COMPUTE] Real CPU Time: 16.6867s
+[2025-12-07 18:28:51.040] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:28:51.040] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:28:51.040] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:51.040] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:28:51.040] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:28:51.042] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:28:54.510] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:28:54.510] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:28:54.510] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:28:54.510] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:28:54.511] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:28:56.688] [p1] [INFO] [TESTING] Test accuracy: 85.26%
+[2025-12-07 18:28:56.688] [p1] [INFO] [STATS] Round: 31 | Virtual Time: 527.0400s | Accuracy: 85.26% | Data: 15.0563 MB | Messages: 61
+[2025-12-07 18:28:56.688] [p1] [INFO] === Round 31 COMPLETED ===
+[2025-12-07 18:28:56.688] [p1] [INFO] New Virtual Time: 527.0400s | Accuracy: 85.26%
+[2025-12-07 18:28:56.688] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:28:56.689] [p1] [INFO] === Round 32/50 STARTED ===
+[2025-12-07 18:28:56.689] [p1] [INFO] Current Virtual Time: 527.0400s
+[2025-12-07 18:28:56.689] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 18:45:19.128] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 18:45:19.128] [p1] [INFO] [COMPUTE] Real CPU Time: 16.5577s
+[2025-12-07 18:45:19.128] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 18:45:19.128] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 18:45:19.128] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:45:19.128] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 18:45:19.128] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 18:45:19.129] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 18:45:22.464] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 18:45:22.465] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 18:45:22.465] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 18:45:22.465] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 18:45:22.465] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 18:45:25.014] [p1] [INFO] [TESTING] Test accuracy: 89.14%
+[2025-12-07 18:45:25.014] [p1] [INFO] [STATS] Round: 32 | Virtual Time: 543.9926s | Accuracy: 89.14% | Data: 15.5499 MB | Messages: 63
+[2025-12-07 18:45:25.014] [p1] [INFO] === Round 32 COMPLETED ===
+[2025-12-07 18:45:25.015] [p1] [INFO] New Virtual Time: 543.9926s | Accuracy: 89.14%
+[2025-12-07 18:45:25.015] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 18:45:25.015] [p1] [INFO] === Round 33/50 STARTED ===
+[2025-12-07 18:45:25.015] [p1] [INFO] Current Virtual Time: 543.9926s
+[2025-12-07 18:45:25.015] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 19:26:34.006] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 19:26:34.006] [p1] [INFO] [COMPUTE] Real CPU Time: 15.9387s
+[2025-12-07 19:26:34.006] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 19:26:34.007] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 19:26:34.007] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:26:34.007] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 19:26:34.007] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 19:26:34.007] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 19:26:34.942] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 19:26:34.943] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 19:26:34.943] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 19:26:34.944] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:26:34.944] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 19:26:37.247] [p1] [INFO] [TESTING] Test accuracy: 84.59%
+[2025-12-07 19:26:37.247] [p1] [INFO] [STATS] Round: 33 | Virtual Time: 560.3262s | Accuracy: 84.59% | Data: 16.0436 MB | Messages: 65
+[2025-12-07 19:26:37.248] [p1] [INFO] === Round 33 COMPLETED ===
+[2025-12-07 19:26:37.248] [p1] [INFO] New Virtual Time: 560.3262s | Accuracy: 84.59%
+[2025-12-07 19:26:37.248] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 19:26:37.248] [p1] [INFO] === Round 34/50 STARTED ===
+[2025-12-07 19:26:37.248] [p1] [INFO] Current Virtual Time: 560.3262s
+[2025-12-07 19:26:37.248] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 19:39:48.071] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 19:39:48.072] [p1] [INFO] [COMPUTE] Real CPU Time: 15.8798s
+[2025-12-07 19:39:48.072] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 19:39:48.072] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 19:39:48.072] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:39:48.072] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 19:39:48.073] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 19:39:48.074] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 19:39:50.349] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 19:39:50.350] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 19:39:50.350] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 19:39:50.350] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:39:50.351] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 19:39:52.652] [p1] [INFO] [TESTING] Test accuracy: 86.18%
+[2025-12-07 19:39:52.653] [p1] [INFO] [STATS] Round: 34 | Virtual Time: 576.6009s | Accuracy: 86.18% | Data: 16.5372 MB | Messages: 67
+[2025-12-07 19:39:52.653] [p1] [INFO] === Round 34 COMPLETED ===
+[2025-12-07 19:39:52.653] [p1] [INFO] New Virtual Time: 576.6009s | Accuracy: 86.18%
+[2025-12-07 19:39:52.653] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 19:39:52.653] [p1] [INFO] === Round 35/50 STARTED ===
+[2025-12-07 19:39:52.654] [p1] [INFO] Current Virtual Time: 576.6009s
+[2025-12-07 19:39:52.654] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 19:57:59.129] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 19:57:59.129] [p1] [INFO] [COMPUTE] Real CPU Time: 19.3308s
+[2025-12-07 19:57:59.130] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 19:57:59.130] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 19:57:59.130] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:57:59.130] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 19:57:59.130] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 19:57:59.130] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 19:58:02.133] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 19:58:02.133] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 19:58:02.133] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 19:58:02.133] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 19:58:02.133] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 19:58:04.257] [p1] [INFO] [TESTING] Test accuracy: 82.70%
+[2025-12-07 19:58:04.257] [p1] [INFO] [STATS] Round: 35 | Virtual Time: 596.3267s | Accuracy: 82.70% | Data: 17.0309 MB | Messages: 69
+[2025-12-07 19:58:04.257] [p1] [INFO] === Round 35 COMPLETED ===
+[2025-12-07 19:58:04.258] [p1] [INFO] New Virtual Time: 596.3267s | Accuracy: 82.70%
+[2025-12-07 19:58:04.258] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 19:58:04.258] [p1] [INFO] === Round 36/50 STARTED ===
+[2025-12-07 19:58:04.258] [p1] [INFO] Current Virtual Time: 596.3267s
+[2025-12-07 19:58:04.258] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:50:05.834] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:50:05.835] [p1] [INFO] [COMPUTE] Real CPU Time: 15.8895s
+[2025-12-07 20:50:05.835] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:50:05.835] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:50:05.835] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:50:05.835] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:50:05.835] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:50:05.836] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:50:08.652] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:50:08.653] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:50:08.653] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:50:08.653] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:50:08.653] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:50:11.264] [p1] [INFO] [TESTING] Test accuracy: 84.49%
+[2025-12-07 20:50:11.265] [p1] [INFO] [STATS] Round: 36 | Virtual Time: 612.6111s | Accuracy: 84.49% | Data: 17.5245 MB | Messages: 71
+[2025-12-07 20:50:11.265] [p1] [INFO] === Round 36 COMPLETED ===
+[2025-12-07 20:50:11.265] [p1] [INFO] New Virtual Time: 612.6111s | Accuracy: 84.49%
+[2025-12-07 20:50:11.265] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:50:11.265] [p1] [INFO] === Round 37/50 STARTED ===
+[2025-12-07 20:50:11.266] [p1] [INFO] Current Virtual Time: 612.6111s
+[2025-12-07 20:50:11.266] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:54:04.121] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:54:04.122] [p1] [INFO] [COMPUTE] Real CPU Time: 18.4312s
+[2025-12-07 20:54:04.122] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:54:04.122] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:54:04.122] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:54:04.122] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:54:04.122] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:54:04.123] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:54:06.221] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:54:06.221] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:54:06.221] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:54:06.221] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:54:06.222] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:54:08.265] [p1] [INFO] [TESTING] Test accuracy: 84.45%
+[2025-12-07 20:54:08.265] [p1] [INFO] [STATS] Round: 37 | Virtual Time: 631.4372s | Accuracy: 84.45% | Data: 18.0182 MB | Messages: 73
+[2025-12-07 20:54:08.265] [p1] [INFO] === Round 37 COMPLETED ===
+[2025-12-07 20:54:08.266] [p1] [INFO] New Virtual Time: 631.4372s | Accuracy: 84.45%
+[2025-12-07 20:54:08.266] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:54:08.266] [p1] [INFO] === Round 38/50 STARTED ===
+[2025-12-07 20:54:08.266] [p1] [INFO] Current Virtual Time: 631.4372s
+[2025-12-07 20:54:08.266] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:54:31.017] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:54:31.018] [p1] [INFO] [COMPUTE] Real CPU Time: 16.8323s
+[2025-12-07 20:54:31.018] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:54:31.018] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:54:31.018] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:54:31.018] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:54:31.018] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:54:31.019] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:54:34.757] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:54:34.757] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:54:34.757] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:54:34.757] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:54:34.758] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:54:36.928] [p1] [INFO] [TESTING] Test accuracy: 86.20%
+[2025-12-07 20:54:36.928] [p1] [INFO] [STATS] Round: 38 | Virtual Time: 648.6644s | Accuracy: 86.20% | Data: 18.5118 MB | Messages: 75
+[2025-12-07 20:54:36.928] [p1] [INFO] === Round 38 COMPLETED ===
+[2025-12-07 20:54:36.928] [p1] [INFO] New Virtual Time: 648.6644s | Accuracy: 86.20%
+[2025-12-07 20:54:36.928] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:54:36.928] [p1] [INFO] === Round 39/50 STARTED ===
+[2025-12-07 20:54:36.929] [p1] [INFO] Current Virtual Time: 648.6644s
+[2025-12-07 20:54:36.929] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:55:05.221] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:55:05.222] [p1] [INFO] [COMPUTE] Real CPU Time: 16.3324s
+[2025-12-07 20:55:05.222] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:55:05.222] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:55:05.222] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:55:05.222] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:55:05.223] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:55:05.224] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:55:08.341] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:55:08.341] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:55:08.342] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:55:08.342] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:55:08.342] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:55:10.640] [p1] [INFO] [TESTING] Test accuracy: 81.46%
+[2025-12-07 20:55:10.640] [p1] [INFO] [STATS] Round: 39 | Virtual Time: 665.3917s | Accuracy: 81.46% | Data: 19.0054 MB | Messages: 77
+[2025-12-07 20:55:10.640] [p1] [INFO] === Round 39 COMPLETED ===
+[2025-12-07 20:55:10.640] [p1] [INFO] New Virtual Time: 665.3917s | Accuracy: 81.46%
+[2025-12-07 20:55:10.640] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:55:10.641] [p1] [INFO] === Round 40/50 STARTED ===
+[2025-12-07 20:55:10.641] [p1] [INFO] Current Virtual Time: 665.3917s
+[2025-12-07 20:55:10.641] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:55:38.934] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:55:38.935] [p1] [INFO] [COMPUTE] Real CPU Time: 16.8142s
+[2025-12-07 20:55:38.935] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:55:38.935] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:55:38.935] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:55:38.936] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:55:38.936] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:55:38.938] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:55:42.492] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:55:42.492] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:55:42.492] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:55:42.493] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:55:42.493] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:55:45.121] [p1] [INFO] [TESTING] Test accuracy: 79.88%
+[2025-12-07 20:55:45.122] [p1] [INFO] [STATS] Round: 40 | Virtual Time: 682.6008s | Accuracy: 79.88% | Data: 19.4991 MB | Messages: 79
+[2025-12-07 20:55:45.122] [p1] [INFO] === Round 40 COMPLETED ===
+[2025-12-07 20:55:45.122] [p1] [INFO] New Virtual Time: 682.6008s | Accuracy: 79.88%
+[2025-12-07 20:55:45.122] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:55:45.122] [p1] [INFO] === Round 41/50 STARTED ===
+[2025-12-07 20:55:45.123] [p1] [INFO] Current Virtual Time: 682.6008s
+[2025-12-07 20:55:45.123] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:56:11.442] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:56:11.443] [p1] [INFO] [COMPUTE] Real CPU Time: 17.2012s
+[2025-12-07 20:56:11.443] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:56:11.443] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:56:11.443] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:56:11.443] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:56:11.443] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:56:11.445] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:56:14.180] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:56:14.181] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:56:14.181] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:56:14.181] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:56:14.181] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:56:16.394] [p1] [INFO] [TESTING] Test accuracy: 80.73%
+[2025-12-07 20:56:16.395] [p1] [INFO] [STATS] Round: 41 | Virtual Time: 700.1969s | Accuracy: 80.73% | Data: 19.9927 MB | Messages: 81
+[2025-12-07 20:56:16.395] [p1] [INFO] === Round 41 COMPLETED ===
+[2025-12-07 20:56:16.395] [p1] [INFO] New Virtual Time: 700.1969s | Accuracy: 80.73%
+[2025-12-07 20:56:16.395] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:56:16.395] [p1] [INFO] === Round 42/50 STARTED ===
+[2025-12-07 20:56:16.395] [p1] [INFO] Current Virtual Time: 700.1969s
+[2025-12-07 20:56:16.395] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:56:40.244] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:56:40.245] [p1] [INFO] [COMPUTE] Real CPU Time: 17.1918s
+[2025-12-07 20:56:40.245] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:56:40.246] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:56:40.246] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:56:40.246] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:56:40.246] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:56:40.247] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:56:43.223] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:56:43.224] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:56:43.224] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:56:43.224] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:56:43.224] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:56:45.250] [p1] [INFO] [TESTING] Test accuracy: 80.84%
+[2025-12-07 20:56:45.250] [p1] [INFO] [STATS] Round: 42 | Virtual Time: 717.7836s | Accuracy: 80.84% | Data: 20.4864 MB | Messages: 83
+[2025-12-07 20:56:45.250] [p1] [INFO] === Round 42 COMPLETED ===
+[2025-12-07 20:56:45.250] [p1] [INFO] New Virtual Time: 717.7836s | Accuracy: 80.84%
+[2025-12-07 20:56:45.251] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:56:45.251] [p1] [INFO] === Round 43/50 STARTED ===
+[2025-12-07 20:56:45.251] [p1] [INFO] Current Virtual Time: 717.7836s
+[2025-12-07 20:56:45.251] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:57:10.277] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:57:10.278] [p1] [INFO] [COMPUTE] Real CPU Time: 17.0641s
+[2025-12-07 20:57:10.278] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:57:10.279] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:57:10.279] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:57:10.279] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:57:10.279] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:57:10.279] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:57:13.646] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:57:13.646] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:57:13.646] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:57:13.646] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:57:13.646] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:57:15.929] [p1] [INFO] [TESTING] Test accuracy: 81.19%
+[2025-12-07 20:57:15.930] [p1] [INFO] [STATS] Round: 43 | Virtual Time: 735.2426s | Accuracy: 81.19% | Data: 20.9800 MB | Messages: 85
+[2025-12-07 20:57:15.930] [p1] [INFO] === Round 43 COMPLETED ===
+[2025-12-07 20:57:15.930] [p1] [INFO] New Virtual Time: 735.2426s | Accuracy: 81.19%
+[2025-12-07 20:57:15.930] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:57:15.930] [p1] [INFO] === Round 44/50 STARTED ===
+[2025-12-07 20:57:15.930] [p1] [INFO] Current Virtual Time: 735.2426s
+[2025-12-07 20:57:15.930] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:57:40.980] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:57:40.980] [p1] [INFO] [COMPUTE] Real CPU Time: 17.0667s
+[2025-12-07 20:57:40.981] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:57:40.981] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:57:40.981] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:57:40.981] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:57:40.981] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:57:40.982] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:57:43.848] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:57:43.849] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:57:43.849] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:57:43.849] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:57:43.849] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:57:46.062] [p1] [INFO] [TESTING] Test accuracy: 80.66%
+[2025-12-07 20:57:46.062] [p1] [INFO] [STATS] Round: 44 | Virtual Time: 752.7043s | Accuracy: 80.66% | Data: 21.4737 MB | Messages: 87
+[2025-12-07 20:57:46.062] [p1] [INFO] === Round 44 COMPLETED ===
+[2025-12-07 20:57:46.062] [p1] [INFO] New Virtual Time: 752.7043s | Accuracy: 80.66%
+[2025-12-07 20:57:46.062] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:57:46.062] [p1] [INFO] === Round 45/50 STARTED ===
+[2025-12-07 20:57:46.062] [p1] [INFO] Current Virtual Time: 752.7043s
+[2025-12-07 20:57:46.062] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:58:08.149] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:58:08.150] [p1] [INFO] [COMPUTE] Real CPU Time: 17.7639s
+[2025-12-07 20:58:08.150] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:58:08.150] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:58:08.150] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:58:08.150] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:58:08.150] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:58:08.151] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:58:11.506] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:58:11.506] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:58:11.507] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:58:11.507] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:58:11.507] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:58:13.599] [p1] [INFO] [TESTING] Test accuracy: 80.03%
+[2025-12-07 20:58:13.599] [p1] [INFO] [STATS] Round: 45 | Virtual Time: 770.8630s | Accuracy: 80.03% | Data: 21.9673 MB | Messages: 89
+[2025-12-07 20:58:13.600] [p1] [INFO] === Round 45 COMPLETED ===
+[2025-12-07 20:58:13.600] [p1] [INFO] New Virtual Time: 770.8630s | Accuracy: 80.03%
+[2025-12-07 20:58:13.600] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:58:13.601] [p1] [INFO] === Round 46/50 STARTED ===
+[2025-12-07 20:58:13.601] [p1] [INFO] Current Virtual Time: 770.8630s
+[2025-12-07 20:58:13.601] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:58:35.200] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:58:35.200] [p1] [INFO] [COMPUTE] Real CPU Time: 17.9826s
+[2025-12-07 20:58:35.201] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:58:35.201] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:58:35.201] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:58:35.201] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:58:35.201] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:58:35.202] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:58:38.632] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:58:38.633] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:58:38.633] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:58:38.633] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:58:38.633] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:58:40.978] [p1] [INFO] [TESTING] Test accuracy: 83.80%
+[2025-12-07 20:58:40.978] [p1] [INFO] [STATS] Round: 46 | Virtual Time: 789.2405s | Accuracy: 83.80% | Data: 22.4610 MB | Messages: 91
+[2025-12-07 20:58:40.978] [p1] [INFO] === Round 46 COMPLETED ===
+[2025-12-07 20:58:40.978] [p1] [INFO] New Virtual Time: 789.2405s | Accuracy: 83.80%
+[2025-12-07 20:58:40.978] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:58:40.978] [p1] [INFO] === Round 47/50 STARTED ===
+[2025-12-07 20:58:40.978] [p1] [INFO] Current Virtual Time: 789.2405s
+[2025-12-07 20:58:40.979] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:59:03.294] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:59:03.295] [p1] [INFO] [COMPUTE] Real CPU Time: 17.3877s
+[2025-12-07 20:59:03.295] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:59:03.295] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:59:03.295] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:59:03.296] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:59:03.296] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:59:03.296] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:59:06.442] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:59:06.443] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:59:06.443] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:59:06.443] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:59:06.443] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:59:08.362] [p1] [INFO] [TESTING] Test accuracy: 82.56%
+[2025-12-07 20:59:08.363] [p1] [INFO] [STATS] Round: 47 | Virtual Time: 807.0231s | Accuracy: 82.56% | Data: 22.9546 MB | Messages: 93
+[2025-12-07 20:59:08.363] [p1] [INFO] === Round 47 COMPLETED ===
+[2025-12-07 20:59:08.363] [p1] [INFO] New Virtual Time: 807.0231s | Accuracy: 82.56%
+[2025-12-07 20:59:08.363] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:59:08.363] [p1] [INFO] === Round 48/50 STARTED ===
+[2025-12-07 20:59:08.363] [p1] [INFO] Current Virtual Time: 807.0231s
+[2025-12-07 20:59:08.363] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:59:29.924] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:59:29.925] [p1] [INFO] [COMPUTE] Real CPU Time: 17.7662s
+[2025-12-07 20:59:29.925] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:59:29.926] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:59:29.926] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:59:29.926] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:59:29.926] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:59:29.927] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 20:59:33.680] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 20:59:33.680] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 20:59:33.681] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 20:59:33.681] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:59:33.681] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 20:59:35.592] [p1] [INFO] [TESTING] Test accuracy: 86.36%
+[2025-12-07 20:59:35.592] [p1] [INFO] [STATS] Round: 48 | Virtual Time: 825.1843s | Accuracy: 86.36% | Data: 23.4483 MB | Messages: 95
+[2025-12-07 20:59:35.592] [p1] [INFO] === Round 48 COMPLETED ===
+[2025-12-07 20:59:35.592] [p1] [INFO] New Virtual Time: 825.1843s | Accuracy: 86.36%
+[2025-12-07 20:59:35.592] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 20:59:35.592] [p1] [INFO] === Round 49/50 STARTED ===
+[2025-12-07 20:59:35.592] [p1] [INFO] Current Virtual Time: 825.1843s
+[2025-12-07 20:59:35.592] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 20:59:57.311] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 20:59:57.311] [p1] [INFO] [COMPUTE] Real CPU Time: 17.7474s
+[2025-12-07 20:59:57.311] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 20:59:57.312] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 20:59:57.312] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 20:59:57.312] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 20:59:57.312] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 20:59:57.313] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 21:00:00.607] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 21:00:00.608] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 21:00:00.608] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 21:00:00.608] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 21:00:00.608] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 21:00:02.366] [p1] [INFO] [TESTING] Test accuracy: 84.82%
+[2025-12-07 21:00:02.367] [p1] [INFO] [STATS] Round: 49 | Virtual Time: 843.3266s | Accuracy: 84.82% | Data: 23.9419 MB | Messages: 97
+[2025-12-07 21:00:02.367] [p1] [INFO] === Round 49 COMPLETED ===
+[2025-12-07 21:00:02.367] [p1] [INFO] New Virtual Time: 843.3266s | Accuracy: 84.82%
+[2025-12-07 21:00:02.367] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 21:00:02.367] [p1] [INFO] === Round 50/50 STARTED ===
+[2025-12-07 21:00:02.367] [p1] [INFO] Current Virtual Time: 843.3266s
+[2025-12-07 21:00:02.367] [p1] [INFO] [PHASE 1] Starting local training...
+[2025-12-07 21:00:21.417] [p1] [INFO] [COMPUTE] Local training completed (5 epochs)
+[2025-12-07 21:00:21.417] [p1] [INFO] [COMPUTE] Real CPU Time: 17.9109s
+[2025-12-07 21:00:21.417] [p1] [INFO] [PHASE 2] Starting network communication (message passing)...
+[2025-12-07 21:00:21.418] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Uploading to coordinator with p0
+[2025-12-07 21:00:21.418] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 21:00:21.418] [p1] [DEBUG] [SYNC] Phase: Send | Status: Sending model to coordinator via message queue
+[2025-12-07 21:00:21.418] [p1] [DEBUG] Model sent to coordinator via message passing
+[2025-12-07 21:00:21.419] [p1] [DEBUG] [SYNC] Phase: Receive | Status: Waiting for aggregated model via message queue
+[2025-12-07 21:00:30.581] [p1] [DEBUG] Aggregated model received via message passing
+[2025-12-07 21:00:30.583] [p1] [INFO] Aggregated model loaded successfully
+[2025-12-07 21:00:30.583] [p1] [INFO] [NETWORK] Protocol: FedAvg | Action: Downloading from coordinator with p0
+[2025-12-07 21:00:30.584] [p1] [INFO] [NETWORK] Payload: 1.9746 Mbits | Delay: 0.1975s | Bandwidth: 10.0 Mbps
+[2025-12-07 21:00:30.584] [p1] [INFO] [TESTING] Evaluating model on test set...
+[2025-12-07 21:00:32.692] [p1] [INFO] [TESTING] Test accuracy: 78.09%
+[2025-12-07 21:00:32.692] [p1] [INFO] [STATS] Round: 50 | Virtual Time: 861.6324s | Accuracy: 78.09% | Data: 24.4356 MB | Messages: 99
+[2025-12-07 21:00:32.693] [p1] [INFO] === Round 50 COMPLETED ===
+[2025-12-07 21:00:32.693] [p1] [INFO] New Virtual Time: 861.6324s | Accuracy: 78.09%
+[2025-12-07 21:00:32.693] [p1] [INFO] --------------------------------------------------------------------------------
+[2025-12-07 21:00:32.693] [p1] [INFO] ================================================================================
+[2025-12-07 21:00:32.693] [p1] [INFO] Process 1 completed all 50 rounds
+[2025-12-07 21:00:32.693] [p1] [INFO] Final Statistics: Accuracy=78.09%, Virtual Time=861.63s, Total Data=24.44 MB, Total Messages=99
+[2025-12-07 21:00:32.693] [p1] [INFO] ================================================================================
