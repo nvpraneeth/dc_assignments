@@ -1,0 +1,26 @@
+Performance Comparison Results
+=============================
+
+Parameters:
+Lambda: 5
+Alpha: 1.5
+Messages per process: 50
+
+Number of Processes | VC Avg Entries | SK Avg Entries | VC Messages | SK Messages | VC Time(s) | SK Time(s)
+-------------------|----------------|----------------|-------------|-------------|------------|-----------
+10 | 10 | 1 | 500 | 500 | 1.62171 | 1.40964
+11 | 11 | 1 | 550 | 550 | 1.0973 | 1.22671
+12 | 12 | 1 | 600 | 600 | 1.14282 | 1.10041
+13 | 13 | 1 | 650 | 650 | 1.1407 | 1.03567
+14 | 14 | 1 | 700 | 700 | 1.12817 | 1.17109
+15 | 15 | 1 | 750 | 750 | 1.04995 | 1.22348
+
+Analysis:
+=========
+For 10 processes: 90% reduction in message size
+For 11 processes: 90.9091% reduction in message size
+For 12 processes: 91.6667% reduction in message size
+For 13 processes: 92.3077% reduction in message size
+For 14 processes: 92.8571% reduction in message size
+For 15 processes: 93.3333% reduction in message size
+Average improvement: 91.8457%

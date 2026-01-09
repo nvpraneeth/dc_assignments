@@ -1,0 +1,27 @@
+# Input Parameters File
+# Format: n k alpha beta
+# Where:
+#   n      - Number of processes (must be perfect square for Maekawa: 4, 9, 16, 25, etc.)
+#   k      - Number of CS entries per process
+#   alpha  - Average time for local computation (exponential distribution, in seconds)
+#   beta   - Average time inside critical section (exponential distribution, in seconds)
+#   Note: alpha < beta as per problem statement
+
+# Default configuration (for quick testing)
+9 15 2.0 5.0
+
+# Experiment configurations (as per assignment requirements):
+# For Experiment 1 & 2: Message and Time Complexity Analysis
+# 
+# Configuration 1: n=9 (3x3 grid for Maekawa)
+# 9 15 2.0 5.0
+#
+# Configuration 2: n=16 (4x4 grid for Maekawa)
+# 16 15 2.0 5.0
+#
+# Configuration 3: n=25 (5x5 grid for Maekawa)
+# 25 15 2.0 5.0
+#
+# To run experiments, update the active line above with desired configuration
+# and run the algorithms. For full experiments, use run-experiments.sh script
+# which automatically tests all three configurations (n=9, 16, 25) with k=15.

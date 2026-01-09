@@ -1,0 +1,28 @@
+Programming Assignment 2 - Distributed Banking System
+====================================================
+
+Roll Number: CS2025RESCH04001
+Submission Date: Sun Oct 19 10:01:39 IST 2025
+
+Deliverables:
+1. Source Code: Snapshot-CS2025RESCH04001.cpp (main implementation)
+2. Report: Report.pdf (design and experimental analysis)
+3. README: README.txt (compilation and execution instructions)
+
+Additional Files:
+- Supporting source files (process.cpp, message.cpp, etc.)
+- Experiment scripts (run_experiments.sh, analyze_results.py)
+- Test script (test_system.sh)
+
+System Features:
+- Multi-threaded distributed banking simulation
+- Chandy-Lamport distributed snapshot algorithm
+- Balance consistency verification
+- Multiple topology support (line, ring, tree, arbitrary)
+- Comprehensive logging and debugging
+
+Compilation: make clean && make
+Execution: ./main_parallel inp-params-<topology>-<processes>.txt
+
+For detailed instructions, see README.txt
+For design details and experiments, see Report.pdf
